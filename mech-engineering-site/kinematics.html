@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kinematics - Mechanical Engineering Helper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="ruler-frame"></div>
+  <div class="background"></div>
+
+  <div class="course-page">
+    <h1>Kinematics</h1>
+
+    <!-- TAB BUTTONS -->
+    <div class="tabs">
+      <button onclick="showSection('lessons', this)">Lessons</button>
+<button onclick="showSection('problems', this)">Problems</button>
+<button onclick="showSection('quiz', this)">Quiz</button>
+<button onclick="showSection('real', this)">Real World Applications</button>
+<button onclick="showSection('video', this)">Video</button>
+    </div>
+
+    <!-- LESSONS -->
+<div id="lessons" class="tab-content" style="display:none;">
+
+  <div class="lesson-content">
+
+    <h2>Motion Without Forces</h2>
+
+    <p>
+      Kinematics is the study of motion without focusing on the forces that cause that motion.
+      Instead of asking <strong>why</strong> an object moves, kinematics focuses on describing
+      <strong>how</strong> an object moves.
+    </p>
+
+    <h3>1. Understanding Motion</h3>
+
+    <p>
+      Motion happens when an object changes position over time. Engineers use kinematics to
+      describe and predict motion in machines, vehicles, tools, and moving mechanical parts.
+    </p>
+
+    <p>
+      The most important motion quantities are:
+    </p>
+
+    <ul>
+      <li><strong>Position</strong> – where an object is located</li>
+      <li><strong>Displacement</strong> – how far an object moves from its starting point</li>
+      <li><strong>Velocity</strong> – how quickly position changes</li>
+      <li><strong>Acceleration</strong> – how quickly velocity changes</li>
+      <li><strong>Time</strong> – how long the motion takes</li>
+    </ul>
+
+    <h3>2. Distance vs. Displacement</h3>
+
+    <p>
+      <strong>Distance</strong> is the total path traveled by an object. It does not depend on direction.
+      <strong>Displacement</strong> is the change in position from start to finish and does include direction.
+    </p>
+
+    <p>
+      For example, if a robot moves 5 meters forward and then 2 meters backward, it travels
+      a total distance of 7 meters, but its displacement is only 3 meters forward.
+    </p>
+
+    <h3>3. Speed vs. Velocity</h3>
+
+    <p>
+      <strong>Speed</strong> tells how fast something is moving. <strong>Velocity</strong> tells how fast
+      something is moving and in what direction.
+    </p>
+
+    <p>
+      Because velocity includes direction, it is a vector quantity. This makes velocity especially
+      important in engineering because direction affects how machines and moving parts behave.
+    </p>
+
+    <h3>4. Acceleration</h3>
+
+    <p>
+      <strong>Acceleration</strong> is the rate at which velocity changes over time. An object accelerates
+      when it speeds up, slows down, or changes direction.
+    </p>
+
+    <p>
+      In kinematics, acceleration helps describe how motion changes. A car speeding up,
+      an elevator starting to move, or a machine part changing direction are all examples
+      of acceleration.
+    </p>
+
+    <h3>5. Basic Kinematics Equations</h3>
+
+    <p>
+      When acceleration is constant, engineers can use kinematics equations to solve motion problems.
+    </p>
+
+    <ul>
+      <li><strong>v = d / t</strong> → velocity equals displacement divided by time</li>
+      <li><strong>a = Δv / t</strong> → acceleration equals change in velocity divided by time</li>
+      <li><strong>vf = vi + at</strong> → final velocity equals initial velocity plus acceleration times time</li>
+      <li><strong>d = vit + ½at²</strong> → displacement can be found using initial velocity, acceleration, and time</li>
+    </ul>
+
+    <h3>6. Why This Matters</h3>
+
+    <p>
+      Kinematics is essential in mechanical engineering because engineers must understand how objects move
+      before they can design systems that control that motion.
+    </p>
+
+    <p>
+      Kinematics is used to design and analyze:
+    </p>
+
+    <ul>
+      <li>Robots and robotic arms</li>
+      <li>Cars and braking systems</li>
+      <li>Elevators and conveyor belts</li>
+      <li>Gears, linkages, and machine parts</li>
+      <li>Projectile and vehicle motion</li>
+    </ul>
+
+    <p>
+      Understanding motion allows engineers to make machines safer, smoother, faster, and more efficient.
+    </p>
+
+  </div>
+</div>
+
+
+<!-- PROBLEMS -->
+<div id="problems" class="tab-content" style="display:none;">
+  <div class="problems-layout">
+
+    <div class="problems-content">
+      <div class="lesson-content">
+
+        <h2>Example Problems</h2>
+
+        <h3>Problem 1: Finding Velocity</h3>
+        <p>A robot moves 12 meters forward in 4 seconds. Find its velocity.</p>
+        <p><strong>Step 1:</strong> Displacement = 12 m, Time = 4 s</p>
+        <p><strong>Step 2:</strong> v = d / t</p>
+        <p><strong>Step 3:</strong> v = 12 / 4 = 3 m/s</p>
+        <p><strong>Answer:</strong> 3 m/s forward.</p>
+
+        <hr>
+
+        <h3>Problem 2: Distance vs. Displacement</h3>
+        <p>A machine part moves 8 meters forward, then 3 meters backward.</p>
+        <p><strong>Distance:</strong> 8 + 3 = 11 m</p>
+        <p><strong>Displacement:</strong> 8 − 3 = 5 m forward</p>
+
+        <hr>
+
+        <h3>Problem 3: Finding Acceleration</h3>
+        <p>A cart speeds up from 2 m/s to 10 m/s in 4 seconds.</p>
+        <p>Δv = 10 − 2 = 8 m/s</p>
+        <p>a = Δv / t = 8 / 4 = 2 m/s²</p>
+
+        <hr>
+
+        <h3>Problem 4: Finding Final Velocity</h3>
+        <p>A car starts at 5 m/s and accelerates at 3 m/s² for 6 seconds.</p>
+        <p>vf = vi + at</p>
+        <p>vf = 5 + (3)(6) = 23 m/s</p>
+
+      </div>
+    </div>
+
+    <div class="formula-sheet">
+      <h3>Formula Sheet</h3>
+
+<p>
+  <strong>Velocity:</strong><br>
+  v = d / t<br>
+  v = Velocity (m/s)<br>
+  d = Displacement (m)<br>
+  t = Time (s)
+</p>
+
+<p>
+  <strong>Acceleration:</strong><br>
+  a = Δv / t<br>
+  a = Acceleration (m/s²)<br>
+  Δv = Change in Velocity<br>
+  t = Time
+</p>
+
+<p>
+  <strong>Change in Velocity:</strong><br>
+  Δv = vf − vi<br>
+  vf = Final Velocity<br>
+  vi = Initial Velocity
+</p>
+
+<p>
+  <strong>Final Velocity:</strong><br>
+  vf = vi + at<br>
+  vf = Final Velocity<br>
+  vi = Initial Velocity<br>
+  a = Acceleration<br>
+  t = Time
+</p>
+
+<p>
+  <strong>Displacement Equation:</strong><br>
+  d = vit + ½at²<br>
+  d = Displacement<br>
+  vi = Initial Velocity<br>
+  a = Acceleration<br>
+  t = Time
+</p>
+
+<p>
+  <strong>Distance vs. Displacement:</strong><br>
+  Distance = Total path traveled<br>
+  Displacement = Change in position
+</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- QUIZ -->
+<div id="quiz" class="tab-content" style="display:none;">
+  <h2>Kinematics Quiz</h2>
+
+  <button type="button" onclick="openRandomQuizSet()" class="quiz-btn">
+    Random Quiz
+  </button>
+
+  <p class="quiz-warning">
+    Warning: Once you select an answer, click the "Check Answer" button to lock in your response.
+    Answers that are not checked before submitting the quiz will NOT count, and unanswered questions
+    will be marked wrong.
+  </p>
+
+  <div id="quiz-panel" class="quiz-panel">
+    <h3 id="quiz-set-title"></h3>
+    <div id="quiz-container"></div>
+  </div>
+</div>
+
+<!-- REAL WORLD APPLICATIONS -->
+<div id="real" class="tab-content" style="display:none;">
+  <div class="lesson-content">
+
+    <h2>Real World Applications of Kinematics</h2>
+
+    <p>
+      Kinematics is used whenever engineers need to understand, predict, or control motion.
+      Instead of focusing on the forces causing the motion, kinematics describes how position,
+      velocity, acceleration, and time change.
+    </p>
+
+    <hr>
+
+    <h3>1. Cars and Braking Systems</h3>
+
+    <p>
+      Cars use kinematics when engineers analyze how fast a vehicle is moving, how long it takes
+      to stop, and how much distance it covers while slowing down.
+    </p>
+
+    <p><strong>Kinematics concepts used:</strong></p>
+    <ul>
+      <li><strong>Velocity:</strong> how fast the car is moving and in what direction.</li>
+      <li><strong>Acceleration:</strong> how quickly the car speeds up or slows down.</li>
+      <li><strong>Displacement:</strong> how far the car moves while braking.</li>
+    </ul>
+
+    <hr>
+
+    <h3>2. Elevators</h3>
+
+    <p>
+      Elevators use kinematics because they move between floors by speeding up, moving at a steady
+      velocity, and slowing down before stopping.
+    </p>
+
+    <p><strong>Kinematics concepts used:</strong></p>
+    <ul>
+      <li><strong>Position:</strong> which floor the elevator is at.</li>
+      <li><strong>Velocity:</strong> how quickly the elevator moves upward or downward.</li>
+      <li><strong>Acceleration:</strong> how smoothly the elevator starts and stops.</li>
+    </ul>
+
+    <hr>
+
+    <h3>3. Robotic Arms</h3>
+
+    <p>
+      Robotic arms use kinematics to control how each part moves from one position to another.
+      Engineers must describe the motion of each joint so the robot can reach the correct location.
+    </p>
+
+    <p><strong>Kinematics concepts used:</strong></p>
+    <ul>
+      <li><strong>Position:</strong> where the end of the robotic arm is located.</li>
+      <li><strong>Displacement:</strong> how far the arm moves from one point to another.</li>
+      <li><strong>Velocity:</strong> how fast the arm moves during operation.</li>
+    </ul>
+
+    <hr>
+
+    <h3>4. Conveyor Belts</h3>
+
+    <p>
+      Conveyor belts use kinematics to move objects at controlled speeds through factories,
+      warehouses, and assembly lines.
+    </p>
+
+    <p><strong>Kinematics concepts used:</strong></p>
+    <ul>
+      <li><strong>Speed:</strong> how fast the belt moves.</li>
+      <li><strong>Distance:</strong> the total path an object travels on the belt.</li>
+      <li><strong>Time:</strong> how long it takes an object to move from one station to another.</li>
+    </ul>
+
+    <hr>
+
+    <h3>5. Roller Coasters</h3>
+
+    <p>
+      Roller coasters use kinematics to describe how the cart speeds up, slows down, and changes
+      direction throughout the track.
+    </p>
+
+    <p><strong>Kinematics concepts used:</strong></p>
+    <ul>
+      <li><strong>Velocity:</strong> the speed and direction of the cart.</li>
+      <li><strong>Acceleration:</strong> changes in speed or direction.</li>
+      <li><strong>Position:</strong> where the cart is along the track.</li>
+    </ul>
+
+    <hr>
+
+    <h3>6. Projectile Motion</h3>
+
+    <p>
+      Projectile motion is used when analyzing objects launched into the air, such as balls,
+      tools, or parts moving through space. Engineers describe how horizontal and vertical motion
+      change over time.
+    </p>
+
+    <p><strong>Kinematics concepts used:</strong></p>
+    <ul>
+      <li><strong>Displacement:</strong> how far the object moves from launch to landing.</li>
+      <li><strong>Velocity:</strong> the object’s speed and direction during flight.</li>
+      <li><strong>Acceleration:</strong> how velocity changes during motion.</li>
+    </ul>
+
+    <hr>
+
+    <h3>7. Gears and Moving Machine Parts</h3>
+
+    <p>
+      Machines often contain parts that move in repeated patterns. Kinematics helps engineers
+      describe the motion of gears, sliders, linkages, and rotating components.
+    </p>
+
+    <p><strong>Kinematics concepts used:</strong></p>
+    <ul>
+      <li><strong>Position:</strong> where a moving part is at a specific time.</li>
+      <li><strong>Velocity:</strong> how fast the part moves.</li>
+      <li><strong>Acceleration:</strong> how quickly the part changes speed or direction.</li>
+    </ul>
+
+    <hr>
+
+    <h3>8. Your Future Experiment Demonstrations</h3>
+
+    <p>
+      This section can later include your own recorded demonstrations, such as a cart moving down
+      a track, a rolling object, a toy car acceleration test, or a motion sensor experiment.
+      These demonstrations would show how kinematics describes real motion using measurements.
+    </p>
+
+    <p><strong>Kinematics concepts used:</strong></p>
+    <ul>
+      <li><strong>v = d / t:</strong> finding velocity from displacement and time.</li>
+      <li><strong>a = Δv / t:</strong> finding acceleration from change in velocity and time.</li>
+      <li><strong>Distance vs. displacement:</strong> comparing total path traveled with change in position.</li>
+    </ul>
+
+  </div>
+</div>
+
+<!-- VIDEO -->
+<div id="video" class="tab-content" style="display:none;">
+  <h2>Experiment Video</h2>
+  <p>Coming soon: Your recorded experiment.</p>
+</div>
+
+<!-- BACK BUTTON -->
+<a href="courses.html" class="back-link">
+  <button class="back-button">Back to Courses</button>
+</a>
+
+</div>
+
+
+</div>
+
+  <!-- JAVASCRIPT -->
+  <script>
+function showSection(id, button) {
+  const section = document.getElementById(id);
+  const isOpen = section.style.display === "block";
+
+  // Hide all tab sections
+  document.querySelectorAll(".tab-content").forEach(s => {
+    s.style.display = "none";
+  });
+
+  // Remove active class from tab buttons
+  document.querySelectorAll(".tabs button").forEach(btn => {
+    btn.classList.remove("active");
+  });
+
+  // Reset quiz when changing tabs
+  const quizPanel = document.getElementById("quiz-panel");
+  const quizContainer = document.getElementById("quiz-container");
+  const randomBtn = document.querySelector("#quiz .quiz-btn");
+
+  if (quizPanel) {
+    quizPanel.classList.remove("open");
+  }
+
+  if (quizContainer) {
+    quizContainer.innerHTML = "";
+  }
+
+  if (randomBtn) {
+    randomBtn.style.display = "inline-block";
+  }
+
+  // Open clicked tab if it was closed
+  if (!isOpen) {
+    section.style.display = "block";
+    button.classList.add("active");
+  }
+}
+</script>
+
+<script>
+let currentQuestionIndex = 0;
+let allQuestions = [];
+let answeredQuestions = {};
+
+const quizQuestions = [
+  {q:"What is kinematics mainly about?",choices:["Forces that cause motion","Motion without focusing on forces","Heat transfer","Material strength"],answer:1},
+  {q:"Kinematics focuses on describing what?",choices:["How objects move","Why forces act","How materials bend","How energy is lost"],answer:0},
+  {q:"Motion happens when an object changes what over time?",choices:["Mass","Position","Color","Temperature"],answer:1},
+  {q:"Which quantity tells where an object is located?",choices:["Position","Velocity","Acceleration","Time"],answer:0},
+  {q:"Which quantity tells how long motion takes?",choices:["Velocity","Displacement","Time","Acceleration"],answer:2},
+  {q:"Which quantity tells how quickly position changes?",choices:["Velocity","Mass","Force","Friction"],answer:0},
+  {q:"Which quantity tells how quickly velocity changes?",choices:["Position","Acceleration","Distance","Time"],answer:1},
+  {q:"What is displacement?",choices:["Total path traveled","Change in position from start to finish","Speed only","Time traveled"],answer:1},
+  {q:"What is distance?",choices:["Total path traveled","Change in position only","Direction only","Acceleration"],answer:0},
+  {q:"Which one includes direction?",choices:["Distance","Displacement","Time","Path length"],answer:1},
+
+  {q:"A robot moves 5 m forward and 2 m backward. What is the total distance?",choices:["3 m","5 m","7 m","10 m"],answer:2},
+  {q:"A robot moves 5 m forward and 2 m backward. What is the displacement?",choices:["7 m forward","3 m forward","2 m backward","5 m forward"],answer:1},
+  {q:"Speed tells what?",choices:["How fast something moves","How fast and in what direction","Change in velocity","Change in position with direction"],answer:0},
+  {q:"Velocity tells what?",choices:["Only how fast something moves","How fast something moves and in what direction","Only time","Only distance"],answer:1},
+  {q:"Why is velocity a vector?",choices:["It has magnitude and direction","It has no direction","It only measures time","It only measures distance"],answer:0},
+  {q:"Which quantity is most directly calculated using v = d / t?",choices:["Velocity","Acceleration","Time squared","Mass"],answer:0},
+  {q:"In v = d / t, what does d represent?",choices:["Distance or displacement","Density","Direction only","Drag"],answer:0},
+  {q:"In v = d / t, what does t represent?",choices:["Tension","Temperature","Time","Total force"],answer:2},
+  {q:"What unit is commonly used for velocity?",choices:["m/s","kg","N","m/s²"],answer:0},
+  {q:"What unit is commonly used for acceleration?",choices:["m/s","m/s²","kg","N"],answer:1},
+
+  {q:"A robot moves 12 m in 4 s. What is its velocity?",choices:["2 m/s","3 m/s","4 m/s","48 m/s"],answer:1},
+  {q:"A cart moves 20 m in 5 s. What is its velocity?",choices:["2 m/s","4 m/s","5 m/s","100 m/s"],answer:1},
+  {q:"A machine part moves 30 m in 10 s. What is its velocity?",choices:["3 m/s","10 m/s","30 m/s","300 m/s"],answer:0},
+  {q:"A car travels 60 m in 6 s. What is its average velocity?",choices:["6 m/s","10 m/s","60 m/s","360 m/s"],answer:1},
+  {q:"An elevator moves 15 m upward in 5 s. What is its velocity?",choices:["3 m/s upward","5 m/s upward","10 m/s upward","75 m/s upward"],answer:0},
+  {q:"A robot travels 24 m in 8 s. What is its velocity?",choices:["2 m/s","3 m/s","4 m/s","8 m/s"],answer:1},
+  {q:"A conveyor belt moves 18 m in 6 s. What is its speed?",choices:["2 m/s","3 m/s","6 m/s","12 m/s"],answer:1},
+  {q:"If displacement is 50 m and time is 10 s, what is velocity?",choices:["5 m/s","10 m/s","40 m/s","500 m/s"],answer:0},
+  {q:"If velocity is 4 m/s and time is 5 s, what displacement is covered?",choices:["9 m","20 m","1.25 m","45 m"],answer:1},
+  {q:"If velocity is 6 m/s and time is 3 s, what displacement is covered?",choices:["2 m","9 m","18 m","36 m"],answer:2},
+
+  {q:"Acceleration is the rate of change of what?",choices:["Position","Velocity","Distance","Time"],answer:1},
+  {q:"An object accelerates when it does what?",choices:["Speeds up only","Slows down only","Changes direction only","Speeds up, slows down, or changes direction"],answer:3},
+  {q:"What does Δv mean?",choices:["Change in velocity","Change in position","Change in time","Final velocity only"],answer:0},
+  {q:"What formula finds acceleration?",choices:["a = Δv / t","v = d / t","d = vt only","vf = vi"],answer:0},
+  {q:"What formula finds change in velocity?",choices:["Δv = vf − vi","Δv = vi − vf","Δv = d / t","Δv = at²"],answer:0},
+  {q:"In Δv = vf − vi, what does vf mean?",choices:["Final velocity","Force value","Friction velocity","First velocity"],answer:0},
+  {q:"In Δv = vf − vi, what does vi mean?",choices:["Initial velocity","Instant velocity only","Inclined velocity","Internal velocity"],answer:0},
+  {q:"A cart speeds up from 2 m/s to 10 m/s. What is Δv?",choices:["8 m/s","12 m/s","20 m/s","5 m/s"],answer:0},
+  {q:"A car slows from 20 m/s to 12 m/s. What is Δv?",choices:["8 m/s","-8 m/s","32 m/s","12 m/s"],answer:1},
+  {q:"A runner speeds up from 0 m/s to 6 m/s. What is Δv?",choices:["0 m/s","3 m/s","6 m/s","12 m/s"],answer:2},
+
+  {q:"A cart speeds up from 2 m/s to 10 m/s in 4 s. What is acceleration?",choices:["2 m/s²","4 m/s²","8 m/s²","12 m/s²"],answer:0},
+  {q:"A car speeds up from 5 m/s to 15 m/s in 5 s. What is acceleration?",choices:["1 m/s²","2 m/s²","3 m/s²","10 m/s²"],answer:1},
+  {q:"An object speeds up from 0 m/s to 20 m/s in 10 s. What is acceleration?",choices:["1 m/s²","2 m/s²","10 m/s²","20 m/s²"],answer:1},
+  {q:"A machine part changes velocity from 4 m/s to 16 m/s in 3 s. What is acceleration?",choices:["3 m/s²","4 m/s²","6 m/s²","12 m/s²"],answer:1},
+  {q:"A cart changes from 10 m/s to 22 m/s in 6 s. What is acceleration?",choices:["2 m/s²","3 m/s²","6 m/s²","12 m/s²"],answer:0},
+  {q:"A vehicle slows from 30 m/s to 10 m/s in 5 s. What is acceleration?",choices:["4 m/s²","-4 m/s²","8 m/s²","-8 m/s²"],answer:1},
+  {q:"A car slows from 18 m/s to 6 m/s in 4 s. What is acceleration?",choices:["3 m/s²","-3 m/s²","12 m/s²","-12 m/s²"],answer:1},
+  {q:"If Δv = 15 m/s and t = 5 s, what is acceleration?",choices:["3 m/s²","5 m/s²","10 m/s²","75 m/s²"],answer:0},
+  {q:"If Δv = 24 m/s and t = 8 s, what is acceleration?",choices:["2 m/s²","3 m/s²","4 m/s²","32 m/s²"],answer:1},
+  {q:"If acceleration is negative, what could be happening?",choices:["The object is slowing down","The object has no motion","The object has no position","Time stopped"],answer:0},
+
+  {q:"Which formula finds final velocity?",choices:["vf = vi + at","v = d / t","a = d / t","d = vf − vi"],answer:0},
+  {q:"In vf = vi + at, what does vi mean?",choices:["Initial velocity","Final velocity","Velocity increase","Instant force"],answer:0},
+  {q:"In vf = vi + at, what does a mean?",choices:["Acceleration","Area","Angle","Average distance"],answer:0},
+  {q:"In vf = vi + at, what does t mean?",choices:["Time","Tension","Total distance","Temperature"],answer:0},
+  {q:"A car starts at 5 m/s and accelerates at 3 m/s² for 6 s. What is vf?",choices:["8 m/s","18 m/s","23 m/s","30 m/s"],answer:2},
+  {q:"A robot starts at 2 m/s and accelerates at 4 m/s² for 3 s. What is vf?",choices:["6 m/s","12 m/s","14 m/s","24 m/s"],answer:2},
+  {q:"A cart starts from rest and accelerates at 2 m/s² for 5 s. What is vf?",choices:["5 m/s","7 m/s","10 m/s","20 m/s"],answer:2},
+  {q:"A vehicle starts at 10 m/s and accelerates at 1 m/s² for 8 s. What is vf?",choices:["11 m/s","18 m/s","80 m/s","8 m/s"],answer:1},
+  {q:"A machine part starts at 6 m/s and accelerates at 2 m/s² for 4 s. What is vf?",choices:["8 m/s","10 m/s","14 m/s","24 m/s"],answer:2},
+  {q:"A car starts at 20 m/s and accelerates at -2 m/s² for 5 s. What is vf?",choices:["10 m/s","15 m/s","20 m/s","30 m/s"],answer:0},
+
+  {q:"Which formula includes displacement, initial velocity, acceleration, and time?",choices:["d = vit + ½at²","v = d / t","a = Δv / t","Δv = vf − vi"],answer:0},
+  {q:"In d = vit + ½at², what does d represent?",choices:["Displacement","Distance only","Density","Direction"],answer:0},
+  {q:"In d = vit + ½at², what does vi represent?",choices:["Initial velocity","Final velocity","Velocity squared","Instant acceleration"],answer:0},
+  {q:"In d = vit + ½at², what does t represent?",choices:["Time","Tension","Temperature","Total force"],answer:0},
+  {q:"If vi = 0, a = 2 m/s², and t = 4 s, what is d?",choices:["8 m","16 m","32 m","4 m"],answer:1},
+  {q:"If vi = 0, a = 3 m/s², and t = 2 s, what is d?",choices:["3 m","6 m","12 m","18 m"],answer:1},
+  {q:"If vi = 5 m/s, a = 0, and t = 4 s, what is d?",choices:["5 m","9 m","20 m","40 m"],answer:2},
+  {q:"If vi = 2 m/s, a = 1 m/s², and t = 4 s, what is d?",choices:["8 m","12 m","16 m","20 m"],answer:2},
+  {q:"If vi = 3 m/s, a = 2 m/s², and t = 3 s, what is d?",choices:["9 m","18 m","27 m","12 m"],answer:1},
+  {q:"If vi = 4 m/s, a = 2 m/s², and t = 5 s, what is d?",choices:["25 m","35 m","45 m","60 m"],answer:2},
+
+  {q:"A robot moves 10 m forward and 10 m backward. What is its displacement?",choices:["20 m","10 m","0 m","100 m"],answer:2},
+  {q:"A robot moves 10 m forward and 10 m backward. What is its distance?",choices:["20 m","10 m","0 m","100 m"],answer:0},
+  {q:"A machine part moves 6 m left, then 2 m right. What is displacement?",choices:["8 m left","4 m left","4 m right","2 m left"],answer:1},
+  {q:"A machine part moves 6 m left, then 2 m right. What is total distance?",choices:["4 m","6 m","8 m","12 m"],answer:2},
+  {q:"A car moves 30 m east and then 10 m west. What is displacement?",choices:["40 m east","20 m east","20 m west","10 m west"],answer:1},
+  {q:"A car moves 30 m east and then 10 m west. What is distance?",choices:["20 m","30 m","40 m","300 m"],answer:2},
+  {q:"A person walks 3 m north, 3 m south, and 4 m north. What is displacement?",choices:["10 m north","4 m north","3 m south","0 m"],answer:1},
+  {q:"A person walks 3 m north, 3 m south, and 4 m north. What is distance?",choices:["4 m","6 m","10 m","0 m"],answer:2},
+  {q:"If final position is 15 m and starting position is 5 m, what is displacement?",choices:["20 m","10 m","5 m","75 m"],answer:1},
+  {q:"If final position is 2 m and starting position is 8 m, what is displacement?",choices:["6 m forward","-6 m","10 m","16 m"],answer:1},
+
+  {q:"Why is kinematics important in mechanical engineering?",choices:["It helps engineers understand and control motion","It removes the need for math","It only studies heat","It only applies to chemistry"],answer:0},
+  {q:"Which system from the lesson uses kinematics?",choices:["Robotic arms","Chemical reactions","Only static bridges","Only still objects"],answer:0},
+  {q:"Which example uses kinematics?",choices:["A conveyor belt moving parts","A wall doing nothing","A parked block only","A table at rest"],answer:0},
+  {q:"Which example best represents acceleration?",choices:["A car speeding up","A still book","A wall","A stopped machine"],answer:0},
+  {q:"Which example best represents constant velocity?",choices:["A conveyor moving at steady speed","A car speeding up","A cart slowing down","A robot changing direction"],answer:0},
+  {q:"Which example best represents displacement?",choices:["A robot’s change from starting point to ending point","The total winding path only","The object’s mass","The object’s temperature"],answer:0},
+  {q:"Which example best represents distance?",choices:["Total path traveled by a moving part","Only final position","Only direction","Only acceleration"],answer:0},
+  {q:"Why do engineers care about direction in velocity?",choices:["Direction affects how moving parts behave","Direction removes time","Direction makes speed zero","Direction replaces acceleration"],answer:0},
+  {q:"Which quantity changes when an object speeds up?",choices:["Velocity","Mass","Material","Color"],answer:0},
+  {q:"Which quantity changes when an object slows down?",choices:["Velocity","Mass","Time unit","Position unit"],answer:0},
+
+  {q:"A cart starts at 0 m/s and reaches 12 m/s in 3 s. What is acceleration?",choices:["3 m/s²","4 m/s²","9 m/s²","12 m/s²"],answer:1},
+  {q:"A car starts at 4 m/s and accelerates at 2 m/s² for 5 s. What is final velocity?",choices:["6 m/s","10 m/s","14 m/s","20 m/s"],answer:2},
+  {q:"A robot moves 36 m in 9 s. What is velocity?",choices:["3 m/s","4 m/s","9 m/s","36 m/s"],answer:1},
+  {q:"An elevator moves 40 m upward in 8 s. What is velocity?",choices:["5 m/s upward","8 m/s upward","32 m/s upward","40 m/s upward"],answer:0},
+  {q:"A vehicle slows from 25 m/s to 5 m/s in 4 s. What is acceleration?",choices:["5 m/s²","-5 m/s²","20 m/s²","-20 m/s²"],answer:1},
+  {q:"A moving part starts at 1 m/s and accelerates at 3 m/s² for 4 s. What is vf?",choices:["4 m/s","12 m/s","13 m/s","16 m/s"],answer:2},
+  {q:"If vi = 0, a = 4 m/s², and t = 3 s, what is d?",choices:["6 m","12 m","18 m","36 m"],answer:2},
+  {q:"If vi = 2 m/s, a = 2 m/s², and t = 5 s, what is d?",choices:["25 m","35 m","45 m","50 m"],answer:1},
+  {q:"A robot travels 14 m total but ends 6 m from where it started. What is distance?",choices:["6 m","8 m","14 m","20 m"],answer:2},
+  {q:"A robot travels 14 m total but ends 6 m from where it started. What is displacement magnitude?",choices:["6 m","8 m","14 m","20 m"],answer:0}
+];
+
+function shuffleQuestions() {
+  allQuestions = [...quizQuestions].sort(() => Math.random() - 0.5);
+}
+
+function openRandomQuizSet() {
+  const panel = document.getElementById("quiz-panel");
+  const randomBtn = document.querySelector(".quiz-btn");
+
+  panel.classList.add("open");
+  randomBtn.style.display = "none";
+
+  shuffleQuestions();
+  currentQuestionIndex = 0;
+  answeredQuestions = {};
+  loadQuestion();
+}
+
+function loadQuestion() {
+  const container = document.getElementById("quiz-container");
+  const question = allQuestions[currentQuestionIndex];
+  const saved = answeredQuestions[currentQuestionIndex];
+
+  let choicesHTML = "";
+
+  question.choices.forEach((choice, index) => {
+    let checked = saved && saved.selectedIndex === index ? "checked" : "";
+    let disabled = saved ? "disabled" : "";
+
+    let extraClass = "";
+
+    if (saved) {
+      if (index === saved.correctIndex) {
+        extraClass = "correct-answer";
+      }
+
+      if (index === saved.selectedIndex && index !== saved.correctIndex) {
+        extraClass = "wrong-answer";
+      }
+    }
+
+    choicesHTML += `
+      <label class="answer-choice ${extraClass}" data-index="${index}">
+        <input type="radio" name="question" ${checked} ${disabled}>
+        ${choice}
+      </label>
+    `;
+  });
+
+  const isLastQuestion = currentQuestionIndex === allQuestions.length - 1;
+
+  container.innerHTML = `
+    <div class="quiz-question">
+      <p><strong>Q${currentQuestionIndex + 1} of ${allQuestions.length}:</strong> ${question.q}</p>
+
+      ${choicesHTML}
+
+      <button id="check-answer-btn" onclick="checkAnswer()" ${saved ? "disabled" : ""}>
+        Check Answer
+      </button>
+
+      <div class="quiz-nav-buttons">
+
+  ${
+    currentQuestionIndex > 0
+      ? `<button onclick="prevQuestion()" id="back-btn">Back</button>`
+      : ``
+  }
+
+  ${
+    isLastQuestion
+      ? `<button onclick="submitQuiz()" id="submit-btn">Submit</button>`
+      : `<button onclick="nextQuestion()" id="next-btn">Next</button>`
+  }
+
+</div>
+    </div>
+  `;
+}
+
+function checkAnswer() {
+  const selected = document.querySelector('input[name="question"]:checked');
+  if (!selected) return;
+
+  const selectedIndex = Number(selected.parentElement.dataset.index);
+  const correctIndex = allQuestions[currentQuestionIndex].answer;
+
+  answeredQuestions[currentQuestionIndex] = {
+    selectedIndex: selectedIndex,
+    correctIndex: correctIndex
+  };
+
+  loadQuestion();
+}
+
+function nextQuestion() {
+  currentQuestionIndex++;
+
+  if (currentQuestionIndex >= allQuestions.length) {
+    currentQuestionIndex = allQuestions.length - 1;
+    loadQuestion();
+    return;
+  }
+
+  loadQuestion();
+}
+
+function prevQuestion() {
+  if (currentQuestionIndex > 0) {
+    currentQuestionIndex--;
+    loadQuestion();
+  }
+}
+
+function submitQuiz() {
+  let correct = 0;
+  let wrong = 0;
+
+  allQuestions.forEach((question, index) => {
+    const saved = answeredQuestions[index];
+
+    if (saved && saved.selectedIndex === question.answer) {
+      correct++;
+    } else {
+      wrong++;
+    }
+  });
+
+  const percent = Math.round((correct / allQuestions.length) * 100);
+  
+  launchConfetti();
+
+  document.getElementById("quiz-container").innerHTML = `
+  <div class="quiz-question">
+    <h3>Quiz Results</h3>
+
+    <p><strong>Correct:</strong> ${correct}</p>
+    <p><strong>Wrong:</strong> ${wrong}</p>
+    <p><strong>Score:</strong> ${percent}%</p>
+
+    <button onclick="openRandomQuizSet()" class="quiz-btn">
+      Restart Quiz
+    </button>
+  </div>
+`;
+}
+
+function launchConfetti() {
+
+  const colors = [
+    "#ff4d4d",
+    "#4dff88",
+    "#4da6ff",
+    "#ffff66",
+    "#ff66ff",
+    "#ffffff"
+  ];
+
+  for (let i = 0; i < 120; i++) {
+
+    const confetti = document.createElement("div");
+    confetti.classList.add("confetti");
+
+    confetti.style.left = Math.random() * 100 + "vw";
+    confetti.style.backgroundColor =
+      colors[Math.floor(Math.random() * colors.length)];
+
+    confetti.style.width = Math.random() * 8 + 6 + "px";
+    confetti.style.height = confetti.style.width;
+
+    confetti.style.animationDuration =
+  (Math.random() * 3 + 7) + "s";
+
+  confetti.style.animationDelay =
+  (Math.random() * 2) + "s";
+
+    document.body.appendChild(confetti);
+
+    confetti.addEventListener("animationend", () => {
+  confetti.remove();
+   });
+  }
+}
+
+console.log("Kinematics quiz loaded. Total questions:", quizQuestions.length);
+</script>
+
+</body>
+</html>

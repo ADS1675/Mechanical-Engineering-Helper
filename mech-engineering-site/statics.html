@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Statics - Mechanical Engineering Helper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="ruler-frame"></div>
+  <div class="background"></div>
+
+  <div class="course-page">
+    <h1>Statics</h1>
+
+    <!-- TAB BUTTONS -->
+    <div class="tabs">
+      <button onclick="showSection('lessons', this)">Lessons</button>
+<button onclick="showSection('problems', this)">Problems</button>
+<button onclick="showSection('quiz', this)">Quiz</button>
+<button onclick="showSection('real', this)">Real World Applications</button>
+<button onclick="showSection('video', this)">Video</button>
+    </div>
+
+    <!-- LESSONS -->
+<div id="lessons" class="tab-content" style="display:none;">
+
+  <div class="lesson-content">
+
+    <h2>Forces & Equilibrium</h2>
+
+    <p>
+      Statics is the study of objects that are either at rest or moving at a constant velocity.
+      In both cases, the key idea is that there is <strong>no acceleration</strong>.
+      According to Newton’s Second Law, this means the <strong>net force acting on the object must be zero</strong>.
+    </p>
+
+    <h3>1. Understanding Forces</h3>
+
+    <p>
+      A <strong>force</strong> is any interaction that can change the motion of an object.
+      Forces are vector quantities, meaning they have both:
+    </p>
+
+    <ul>
+      <li><strong>Magnitude</strong> – how strong the force is</li>
+      <li><strong>Direction</strong> – the way the force is applied</li>
+    </ul>
+
+    <p>Forces are measured in <strong>Newtons (N)</strong>.</p>
+
+    <p>Some of the most common forces in statics include:</p>
+
+    <ul>
+      <li><strong>Weight (W)</strong> – the force of gravity acting on an object (always downward)</li>
+      <li><strong>Normal Force (N)</strong> – the support force from a surface, acting perpendicular to it</li>
+      <li><strong>Tension (T)</strong> – the pulling force transmitted through a rope or cable</li>
+      <li><strong>Friction (F)</strong> – a force that resists motion between surfaces</li>
+    </ul>
+
+    <p>
+      Each of these forces behaves in a predictable way, which allows engineers to model and solve problems accurately.
+    </p>
+
+    <h3>2. Forces as Vectors</h3>
+
+    <p>
+      Because forces have direction, they are often broken into components.
+      In two-dimensional problems, we usually split forces into:
+    </p>
+
+    <ul>
+      <li>Horizontal components (x-direction)</li>
+      <li>Vertical components (y-direction)</li>
+    </ul>
+
+    <p>
+      This allows us to analyze each direction independently, which simplifies solving equilibrium problems.
+    </p>
+
+    <p>
+      For example, a force at an angle can be separated into:
+    </p>
+
+    <ul>
+      <li>A horizontal part</li>
+      <li>A vertical part</li>
+    </ul>
+
+    <p>
+      This process is essential in nearly all statics problems.
+    </p>
+
+    <h3>3. Equilibrium</h3>
+
+    <p>
+      An object is in <strong>equilibrium</strong> when all forces acting on it are balanced.
+      This means the object will either remain at rest or continue moving at a constant velocity.
+    </p>
+
+    <p>There are two main conditions for equilibrium:</p>
+
+    <ul>
+      <li><strong>Translational Equilibrium</strong> – no movement in any direction</li>
+      <li><strong>Rotational Equilibrium</strong> – no rotation about any point</li>
+    </ul>
+
+    <p>
+      In this lesson, we focus on translational equilibrium.
+    </p>
+
+    <h3>4. Equilibrium Equations</h3>
+
+    <p>To solve statics problems, we use the following equations:</p>
+
+    <ul>
+      <li><strong>ΣFx = 0</strong> → the sum of all horizontal forces equals zero</li>
+      <li><strong>ΣFy = 0</strong> → the sum of all vertical forces equals zero</li>
+    </ul>
+
+    <p>
+      These equations come directly from Newton’s laws and are the foundation of statics.
+    </p>
+
+    <p>
+      If either of these sums is not zero, the object will accelerate.
+    </p>
+
+    <h3>5. Balanced Forces</h3>
+
+    <p>Balanced forces cancel each other out. This means:</p>
+
+    <ul>
+      <li>For every force in one direction, there is an equal force in the opposite direction</li>
+    </ul>
+
+    <p>For example:</p>
+
+    <ul>
+      <li>An object sitting on a table has weight acting downward</li>
+      <li>The table provides an equal normal force upward</li>
+    </ul>
+
+    <p>
+      Since these forces are equal and opposite, the object remains at rest.
+    </p>
+
+    <h3>6. Why This Matters</h3>
+
+    <p>
+      Understanding forces and equilibrium is essential in mechanical engineering because it allows engineers to:
+    </p>
+
+    <ul>
+      <li>Ensure structures remain stable</li>
+      <li>Prevent mechanical failure</li>
+      <li>Design safe and efficient systems</li>
+    </ul>
+
+    <p>
+      Every structure or machine must satisfy equilibrium conditions to function properly.
+    </p>
+
+  </div>
+</div>
+
+    <div id="problems" class="tab-content" style="display:none;">
+
+  <div class="problems-layout">
+
+    <!-- LEFT SIDE: PROBLEMS -->
+    <div class="problems-content">
+
+      <div class="lesson-content">
+
+        <h2>Example Problems</h2>
+
+        <h3>Problem 1: Box on a Table</h3>
+
+        <p>
+          A 10 kg box is resting on a flat table. Find the normal force acting on the box.
+        </p>
+
+        <p><strong>Step 1: Identify forces</strong></p>
+        <ul>
+          <li>Weight (W) acting downward</li>
+          <li>Normal force (N) acting upward</li>
+        </ul>
+
+        <p><strong>Step 2: Calculate weight</strong></p>
+        <p>W = mg = 10 × 9.8 = 98 N</p>
+
+        <p><strong>Step 3: Apply equilibrium</strong></p>
+        <p>ΣFy = 0 → N − W = 0</p>
+
+        <p><strong>Answer:</strong> N = 98 N</p>
+
+        <hr>
+
+        <h3>Problem 2: Hanging Mass</h3>
+
+        <p>
+          A 5 kg object is hanging from a rope. Find the tension in the rope.
+        </p>
+
+        <p><strong>Step 1: Forces</strong></p>
+        <ul>
+          <li>Weight downward</li>
+          <li>Tension upward</li>
+        </ul>
+
+        <p><strong>Step 2: Calculate weight</strong></p>
+        <p>W = 5 × 9.8 = 49 N</p>
+
+        <p><strong>Step 3: Equilibrium</strong></p>
+        <p>ΣFy = 0 → T − W = 0</p>
+
+        <p><strong>Answer:</strong> T = 49 N</p>
+
+        <hr>
+
+        <h3>Problem 3: Two Forces Opposing</h3>
+
+        <p>
+          A box is pushed to the right with a force of 30 N. Friction pushes left with 30 N.
+          Is the object moving?
+        </p>
+
+        <p><strong>Step 1:</strong> Identify forces</p>
+        <ul>
+          <li>30 N right</li>
+          <li>30 N left</li>
+        </ul>
+
+        <p><strong>Step 2: Sum forces</strong></p>
+        <p>ΣFx = 30 − 30 = 0</p>
+
+        <p><strong>Answer:</strong> The object is in equilibrium and does not accelerate.</p>
+
+        <hr>
+
+        <h3>Problem 4: Angled Force (Intro)</h3>
+
+        <p>
+          A 100 N force acts at a 45° angle. Find the horizontal and vertical components.
+        </p>
+
+        <p><strong>Step 1: Use trigonometry</strong></p>
+        <p>Fx = 100 cos(45°)</p>
+        <p>Fy = 100 sin(45°)</p>
+
+        <p><strong>Step 2: Calculate</strong></p>
+        <p>Fx ≈ 70.7 N</p>
+        <p>Fy ≈ 70.7 N</p>
+
+        <p><strong>Answer:</strong> Fx = 70.7 N, Fy = 70.7 N</p>
+
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE: FORMULA SHEET -->
+    <div class="formula-sheet">
+
+      <h3>Formula Sheet</h3>
+
+      <p><strong>Weight:</strong><br> W = mg</p>
+
+      <p><strong>Equilibrium:</strong><br>
+        ΣFx = 0<br>
+        ΣFy = 0
+      </p>
+
+      <p><strong>Components:</strong><br>
+        Fx = F cos(θ)<br>
+        Fy = F sin(θ)
+      </p>
+
+      <p><strong>Friction:</strong><br>
+        F = μN
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+
+   <div id="quiz" class="tab-content" style="display:none;">
+  <h2>Statics Quiz</h2>
+
+  <button type="button" onclick="openRandomQuizSet()" class="quiz-btn">
+  Random Quiz
+</button>
+
+<p class="quiz-warning">
+  Warning: Once you select an answer, click the "Check Answer" button to lock in your response. 
+  Answers that are not checked before submitting the quiz will NOT count, and unanswered questions 
+  will be marked wrong.
+</p>
+
+  <div id="quiz-panel" class="quiz-panel">
+    <h3 id="quiz-set-title"></h3>
+    <div id="quiz-container"></div>
+  </div>
+</div>
+
+    <div id="real" class="tab-content" style="display:none;">
+  <div class="lesson-content">
+
+    <h2>Real World Applications of Statics</h2>
+
+    <p>
+      Statics is used whenever engineers need to make sure an object or structure stays stable.
+      The main idea is that forces must balance so the object does not accelerate or fail.
+    </p>
+
+    <hr>
+
+    <h3>1. Bridges</h3>
+    <p>
+      Bridges use statics because they must support their own weight, the weight of cars,
+      and forces from wind or movement. Engineers analyze the forces acting downward and
+      make sure the supports provide enough upward force to keep the bridge in equilibrium.
+    </p>
+
+    <p><strong>Statics concepts used:</strong></p>
+    <ul>
+      <li><strong>Weight:</strong> the bridge and vehicles create downward forces.</li>
+      <li><strong>Normal force/support force:</strong> bridge supports push upward.</li>
+      <li><strong>Equilibrium:</strong> ΣFy = 0 must be satisfied so the bridge stays stable.</li>
+    </ul>
+
+    <hr>
+
+    <h3>2. Cranes</h3>
+
+<p>
+  Cranes use statics when lifting and holding heavy objects motionless in the air.
+  The load creates a downward weight force, while the cables provide upward tension forces.
+  Engineers must make sure the forces balance so the object remains at rest and does not accelerate.
+</p>
+
+<p><strong>Statics concepts used:</strong></p>
+<ul>
+  <li><strong>Tension:</strong> cables pull upward on the load.</li>
+  <li><strong>Weight:</strong> the lifted object pulls downward due to gravity.</li>
+  <li><strong>Equilibrium:</strong> ΣFy = 0 when the load is held motionless.</li>
+</ul>
+
+    <hr>
+
+    <h3>3. Shelves Mounted to a Wall</h3>
+    <p>
+      A wall-mounted shelf must support the weight of books, tools, or other objects placed on it.
+      The shelf pushes down on the brackets, while the brackets and wall provide supporting forces.
+      Engineers and designers use statics to make sure the shelf will not fall or bend too much.
+    </p>
+
+    <p><strong>Statics concepts used:</strong></p>
+    <ul>
+      <li><strong>Weight:</strong> objects on the shelf pull downward.</li>
+      <li><strong>Normal/support force:</strong> brackets push back against the load.</li>
+      <li><strong>Balanced forces:</strong> upward and downward forces must cancel.</li>
+    </ul>
+
+    <hr>
+
+    <h3>4. Cars Parked on an Incline</h3>
+    <p>
+      When a car is parked on a hill, gravity pulls the car downward, but the road and friction
+      help keep it from sliding. Because the surface is angled, the car’s weight can be thought of
+      as having components in different directions.
+    </p>
+
+    <p><strong>Statics concepts used:</strong></p>
+    <ul>
+      <li><strong>Force components:</strong> weight can be split into parts along and into the hill.</li>
+      <li><strong>Friction:</strong> resists sliding down the incline.</li>
+      <li><strong>Normal force:</strong> the road pushes perpendicular to the tires.</li>
+    </ul>
+
+    <hr>
+
+    <h3>5. Hanging Signs</h3>
+    <p>
+      A hanging sign is a simple example of statics. The sign’s weight pulls downward, while
+      cables or chains pull upward through tension. If the sign is not moving, the upward tension
+      forces balance the downward weight.
+    </p>
+
+    <p><strong>Statics concepts used:</strong></p>
+    <ul>
+      <li><strong>Weight:</strong> the sign pulls downward.</li>
+      <li><strong>Tension:</strong> cables pull upward.</li>
+      <li><strong>ΣFy = 0:</strong> vertical forces balance when the sign is motionless.</li>
+    </ul>
+
+    <hr>
+
+    <h3>6. Ladders Leaning Against a Wall</h3>
+    <p>
+      A ladder leaning against a wall relies on friction and support forces to remain at rest.
+      The floor provides an upward normal force, the wall pushes on the ladder, and friction
+      helps prevent sliding.
+    </p>
+
+    <p><strong>Statics concepts used:</strong></p>
+    <ul>
+      <li><strong>Normal force:</strong> surfaces push back on the ladder.</li>
+      <li><strong>Friction:</strong> helps keep the ladder from slipping.</li>
+      <li><strong>Balanced forces:</strong> forces must cancel for the ladder to stay still.</li>
+    </ul>
+
+    <hr>
+
+    <h3>7. Mechanical Supports and Brackets</h3>
+    <p>
+      Brackets are used to hold machines, shelves, pipes, and other parts in place.
+      Engineers use statics to determine whether the bracket can safely support the forces
+      acting on it without moving or failing.
+    </p>
+
+    <p><strong>Statics concepts used:</strong></p>
+    <ul>
+      <li><strong>Force direction:</strong> loads may act downward, sideways, or at angles.</li>
+      <li><strong>Vector components:</strong> angled forces can be split into x and y components.</li>
+      <li><strong>Equilibrium:</strong> all forces must balance for the support to remain stable.</li>
+    </ul>
+
+    <hr>
+
+    <h3>8. Your Future Experiment Demonstrations</h3>
+    <p>
+      This section can later include your own recorded demonstrations, such as a hanging mass,
+      a supported beam, a friction test, or a force balance setup. These experiments would show
+      how the same statics ideas from the lesson appear in real physical systems.
+    </p>
+
+    <p><strong>Statics concepts used:</strong></p>
+    <ul>
+      <li><strong>ΣFx = 0:</strong> horizontal forces balance.</li>
+      <li><strong>ΣFy = 0:</strong> vertical forces balance.</li>
+      <li><strong>Weight, normal force, tension, and friction:</strong> the core forces from the lesson.</li>
+    </ul>
+
+  </div>
+</div>
+
+    <div id="video" class="tab-content" style="display:none;">
+      <h2>Experiment Video</h2>
+      <p>Coming soon: Your recorded experiment.</p>
+    </div>
+
+    <!-- BACK BUTTON -->
+    <a href="courses.html">
+      <button class="back-button">Back to Courses</button>
+    </a>
+  </div>
+
+  <!-- JAVASCRIPT -->
+  <script>
+function showSection(id, button) {
+  const section = document.getElementById(id);
+  const isOpen = section.style.display === "block";
+
+  // Hide all tab sections
+  document.querySelectorAll(".tab-content").forEach(s => {
+    s.style.display = "none";
+  });
+
+  // Remove active class from tab buttons
+  document.querySelectorAll(".tabs button").forEach(btn => {
+    btn.classList.remove("active");
+  });
+
+  // Reset quiz when changing tabs
+  const quizPanel = document.getElementById("quiz-panel");
+  const quizContainer = document.getElementById("quiz-container");
+  const randomBtn = document.querySelector("#quiz .quiz-btn");
+
+  if (quizPanel) {
+    quizPanel.classList.remove("open");
+  }
+
+  if (quizContainer) {
+    quizContainer.innerHTML = "";
+  }
+
+  if (randomBtn) {
+    randomBtn.style.display = "inline-block";
+  }
+
+  // Open clicked tab if it was closed
+  if (!isOpen) {
+    section.style.display = "block";
+    button.classList.add("active");
+  }
+}
+</script>
+
+<script>
+let currentQuestionIndex = 0;
+let allQuestions = [];
+let answeredQuestions = {};
+
+const quizQuestions = [
+  {q:"What is statics mainly about?",choices:["Objects accelerating","Objects at rest or moving at constant velocity","Objects melting","Objects changing shape"],answer:1},
+  {q:"According to the lesson, if there is no acceleration, what must the net force be?",choices:["Zero","Equal to mass","Equal to weight","Greater than friction"],answer:0},
+  {q:"Why is force considered a vector?",choices:["It has only size","It has magnitude and direction","It has only direction","It has no units"],answer:1},
+  {q:"What unit is force measured in?",choices:["Kilograms","Meters","Newtons","Seconds"],answer:2},
+  {q:"Which force always acts downward?",choices:["Normal force","Weight","Tension","Friction"],answer:1},
+  {q:"What is the formula for weight?",choices:["W = mg","F = μN","Fx = Fcosθ","Fy = Fsinθ"],answer:0},
+  {q:"A 10 kg box rests on a table. What is its weight?",choices:["10 N","98 N","1000 N","9.8 N"],answer:1},
+  {q:"A box rests on a flat table. What force balances its weight?",choices:["Tension","Friction","Normal force","Applied force"],answer:2},
+  {q:"The normal force acts in what direction compared to a surface?",choices:["Parallel","Perpendicular","Always downward","Always sideways"],answer:1},
+  {q:"A 20 kg object rests on a horizontal floor. What is the normal force?",choices:["20 N","98 N","196 N","392 N"],answer:2},
+
+  {q:"What force is transmitted through a rope or cable?",choices:["Weight","Tension","Normal force","Friction"],answer:1},
+  {q:"What force resists motion between surfaces?",choices:["Friction","Tension","Weight","Normal force"],answer:0},
+  {q:"What is the friction formula from the lesson?",choices:["W = mg","F = μN","Fx = Fcosθ","ΣFx = 0"],answer:1},
+  {q:"If μ = 0.25 and N = 400 N, what is friction?",choices:["25 N","100 N","160 N","400 N"],answer:1},
+  {q:"What does ΣFx = 0 mean?",choices:["Vertical forces are balanced","Horizontal forces are balanced","The object has no mass","Friction is zero"],answer:1},
+  {q:"What does ΣFy = 0 mean?",choices:["Horizontal forces are balanced","Vertical forces are balanced","The object rotates","Weight disappears"],answer:1},
+  {q:"If ΣFx is not zero, what happens?",choices:["The object accelerates horizontally","The object must stay still","Mass becomes zero","Gravity stops"],answer:0},
+  {q:"If ΣFy is not zero, what happens?",choices:["The object accelerates vertically","The object remains still","Friction becomes zero","Weight disappears"],answer:0},
+  {q:"Balanced forces do what to each other?",choices:["Cancel out","Double","Create mass","Remove gravity"],answer:0},
+  {q:"A 50 N force pushes right and 50 N pushes left. What is ΣFx?",choices:["100 N","50 N","0 N","25 N"],answer:2},
+
+  {q:"A 5 kg object hangs motionless from one rope. What is the tension?",choices:["5 N","49 N","98 N","0 N"],answer:1},
+  {q:"A 15 kg box rests on a table. What is its weight?",choices:["15 N","147 N","1500 N","9.8 N"],answer:1},
+  {q:"A 15 kg box rests on a table. What is the normal force?",choices:["15 N","147 N","1500 N","0 N"],answer:1},
+  {q:"A 30 kg object rests on a horizontal floor. What is its weight?",choices:["30 N","294 N","3000 N","9.8 N"],answer:1},
+  {q:"A 30 kg object rests on a horizontal floor. What is the normal force?",choices:["30 N","294 N","3000 N","0 N"],answer:1},
+  {q:"A 40 kg hanging object is motionless. What is the rope tension?",choices:["40 N","392 N","4000 N","9.8 N"],answer:1},
+  {q:"A 60 kg object rests on level ground. What is its normal force?",choices:["60 N","588 N","6000 N","294 N"],answer:1},
+  {q:"A 100 kg object rests on the floor. What is its weight?",choices:["100 N","980 N","1000 N","490 N"],answer:1},
+  {q:"If a table pushes upward with 980 N on a 100 kg object, what force is being balanced?",choices:["Friction","Weight","Tension","Horizontal force"],answer:1},
+  {q:"If upward force is 500 N and downward force is 500 N, what is ΣFy?",choices:["1000 N","500 N","0 N","250 N"],answer:2},
+
+  {q:"Why do engineers break angled forces into components?",choices:["To separate horizontal and vertical effects","To remove gravity","To make mass zero","To avoid using units"],answer:0},
+  {q:"Which formula finds the horizontal component of an angled force?",choices:["Fx = Fcosθ","Fy = Fsinθ","W = mg","F = μN"],answer:0},
+  {q:"Which formula finds the vertical component of an angled force?",choices:["Fx = Fsinθ","Fy = Fsinθ","W = mg","ΣFx = 0"],answer:1},
+  {q:"A 100 N force acts at 30°. What is Fx approximately?",choices:["50 N","86.6 N","100 N","30 N"],answer:1},
+  {q:"A 100 N force acts at 30°. What is Fy?",choices:["50 N","86.6 N","100 N","30 N"],answer:0},
+  {q:"A 100 N force acts at 60°. What is Fx?",choices:["50 N","86.6 N","100 N","160 N"],answer:0},
+  {q:"A 100 N force acts at 60°. What is Fy approximately?",choices:["50 N","86.6 N","100 N","160 N"],answer:1},
+  {q:"A 150 N force acts at 30°. What is Fx approximately?",choices:["75 N","129.9 N","150 N","30 N"],answer:1},
+  {q:"A 150 N force acts at 30°. What is Fy?",choices:["75 N","129.9 N","150 N","30 N"],answer:0},
+  {q:"A 200 N force acts at 60°. What is Fx?",choices:["100 N","173.2 N","200 N","60 N"],answer:0},
+
+  {q:"A 200 N force acts at 60°. What is Fy approximately?",choices:["100 N","173.2 N","200 N","60 N"],answer:1},
+  {q:"A 250 N force acts at 45°. What is Fx approximately?",choices:["125 N","176.8 N","250 N","353.6 N"],answer:1},
+  {q:"A 250 N force acts at 45°. What is Fy approximately?",choices:["125 N","176.8 N","250 N","353.6 N"],answer:1},
+  {q:"A 300 N force acts at 60°. What is Fx?",choices:["150 N","259.8 N","300 N","60 N"],answer:0},
+  {q:"A 300 N force acts at 60°. What is Fy approximately?",choices:["150 N","259.8 N","300 N","60 N"],answer:1},
+  {q:"A crate has 120 N right and 90 N left. What is the net horizontal force?",choices:["210 N right","30 N right","30 N left","0 N"],answer:1},
+  {q:"A crate has 80 N right and 80 N left. What is ΣFx?",choices:["160 N","80 N","0 N","40 N"],answer:2},
+  {q:"A box has 100 N right, 40 N right, and 140 N left. What is ΣFx?",choices:["280 N","140 N right","0 N","40 N left"],answer:2},
+  {q:"A box has 220 N right and friction balances it. What must friction be?",choices:["220 N left","220 N right","110 N left","0 N"],answer:0},
+  {q:"A box has 90 N right and 70 N left. What extra force is needed for equilibrium?",choices:["20 N left","20 N right","160 N left","0 N"],answer:0},
+
+  {q:"If N = 300 N and μ = 0.4, what is friction?",choices:["75 N","120 N","300 N","700 N"],answer:1},
+  {q:"If N = 500 N and μ = 0.3, what is friction?",choices:["150 N","500 N","0.3 N","1667 N"],answer:0},
+  {q:"If N = 250 N and μ = 0.2, what is friction?",choices:["25 N","50 N","125 N","250 N"],answer:1},
+  {q:"If N = 600 N and μ = 0.15, what is friction?",choices:["90 N","600 N","4000 N","15 N"],answer:0},
+  {q:"If N = 800 N and μ = 0.45, what is friction?",choices:["360 N","800 N","1778 N","45 N"],answer:0},
+  {q:"If friction is 147 N left and the pull is 147 N right, what is ΣFx?",choices:["294 N","147 N","0 N","73.5 N"],answer:2},
+  {q:"If a 125 N pull right is balanced by 125 N friction left, is the object horizontally balanced?",choices:["Yes","No","Only vertically","Only if mass is zero"],answer:0},
+  {q:"A crate has μ = 0.25 and N = 500 N. What friction force resists motion?",choices:["125 N","250 N","500 N","2000 N"],answer:0},
+  {q:"If friction is 90 N left, what pull right is needed for horizontal equilibrium?",choices:["45 N","90 N","180 N","0 N"],answer:1},
+  {q:"Which force usually balances a horizontal push in simple statics problems?",choices:["Friction","Weight","Normal force","Gravity"],answer:0},
+
+  {q:"What is translational equilibrium?",choices:["No movement in any direction","No rotation only","Only upward motion","Only friction"],answer:0},
+  {q:"According to the lesson, what two equations are used for translational equilibrium?",choices:["ΣFx = 0 and ΣFy = 0","W = mg and F = ma","Fx = Fy and W = 0","μ = FN and m = Wg"],answer:0},
+  {q:"A box has balanced horizontal forces but unbalanced vertical forces. Is it in full translational equilibrium?",choices:["Yes","No","Only if friction exists","Only if it is heavy"],answer:1},
+  {q:"A box has balanced vertical forces but ΣFx = 20 N right. Is it in full translational equilibrium?",choices:["Yes","No","Only vertically","Only if mass is zero"],answer:1},
+  {q:"A box has 200 N up, 200 N down, 80 N right, and 80 N left. Is it in translational equilibrium?",choices:["Yes","No","Only horizontally","Only vertically"],answer:0},
+  {q:"A box has N = 500 N and W = 490 N. What is ΣFy?",choices:["990 N up","10 N up","10 N down","0 N"],answer:1},
+  {q:"Based on the previous situation, is the box vertically balanced?",choices:["Yes","No","Only if friction is zero","Only if tension exists"],answer:1},
+  {q:"If an object remains at rest, what can usually be concluded about net force?",choices:["Net force is zero","Net force is increasing","Only weight acts","No forces act"],answer:0},
+  {q:"If an object moves at constant velocity, what does the lesson say about net force?",choices:["Net force is zero","Net force is large","It has no mass","Gravity is off"],answer:0},
+  {q:"If both ΣFx and ΣFy equal zero, what happens to acceleration?",choices:["It is zero","It increases","It becomes gravity","It becomes friction"],answer:0},
+
+  {q:"A 400 N object is supported by two equal vertical ropes. What is tension in each rope?",choices:["100 N","200 N","400 N","800 N"],answer:1},
+  {q:"A 900 N sign hangs from two equal vertical cables. What is tension in each cable?",choices:["900 N","450 N","1800 N","90 N"],answer:1},
+  {q:"A 750 N load is supported equally by three vertical cables. What is tension in each?",choices:["750 N","375 N","250 N","1500 N"],answer:2},
+  {q:"A 300 N object is supported equally by two vertical cables. What is tension in each?",choices:["600 N","300 N","150 N","75 N"],answer:2},
+  {q:"A hanging object has W = 250 N. If it is motionless, what is T?",choices:["0 N","125 N","250 N","500 N"],answer:2},
+  {q:"A rope pulls upward with 400 N while weight pulls downward with 400 N. What is ΣFy?",choices:["800 N","400 N","0 N","200 N"],answer:2},
+  {q:"If weight is 600 N downward, what upward normal force is needed for vertical equilibrium?",choices:["300 N","600 N","1200 N","0 N"],answer:1},
+  {q:"A table pushes upward on a box. What force is this?",choices:["Weight","Normal force","Tension","Friction"],answer:1},
+  {q:"A rope pulls upward on a hanging mass. What force is this?",choices:["Tension","Normal force","Friction","Weight"],answer:0},
+  {q:"A force that resists sliding is called what?",choices:["Weight","Normal force","Friction","Tension"],answer:2},
+
+  {q:"A force at an angle must be separated into what?",choices:["Components","Masses","Volumes","Densities"],answer:0},
+  {q:"Which component affects horizontal equilibrium?",choices:["Fx","Fy","Mass only","Friction only"],answer:0},
+  {q:"Which component affects vertical equilibrium?",choices:["Fx","Fy","Mass only","Horizontal push only"],answer:1},
+  {q:"A 180 N force at 60° has Fx = 90 N and Fy = 155.9 N. Which component helps balance weight?",choices:["Fx","Fy","Neither","Mass"],answer:1},
+  {q:"A 250 N angled force has Fx = 216.5 N and Fy = 125 N. Which component affects ΣFx?",choices:["Fx","Fy","Weight","Normal force"],answer:0},
+  {q:"If vertical forces are 155.9 N up and 155.9 N down, what is ΣFy?",choices:["311.8 N","155.9 N","0 N","90 N"],answer:2},
+  {q:"If horizontal forces are 90 N right and 70 N left, is horizontal equilibrium satisfied?",choices:["Yes","No","Only if vertical forces balance","Only if weight is zero"],answer:1},
+  {q:"A free object has 100 N right, 60 N left, and 40 N left. What is ΣFx?",choices:["200 N","0 N","40 N right","40 N left"],answer:1},
+  {q:"If upward forces equal downward forces and rightward forces equal leftward forces, what condition is met?",choices:["Translational equilibrium","Acceleration","Unbalanced force","Free fall"],answer:0},
+  {q:"Which final condition proves translational equilibrium?",choices:["ΣFx = 0 and ΣFy = 0","Only ΣFx = 0","Only weight exists","Friction is greater than normal"],answer:0},
+
+  {q:"If a box has 300 N upward and 300 N downward, what is ΣFy?",choices:["600 N","300 N","0 N","150 N"],answer:2},
+  {q:"If ΣFx = 0, what can you conclude?",choices:["Horizontal forces are balanced","Vertical forces are balanced","The object has no weight","The object must rotate"],answer:0},
+  {q:"What is the main goal of statics?",choices:["Analyze forces in equilibrium","Increase speed","Remove friction","Make objects accelerate"],answer:0},
+  {q:"If forces are not balanced, what happens?",choices:["Acceleration can occur","Equilibrium always occurs","Mass disappears","Gravity stops"],answer:0},
+  {q:"Which force acts perpendicular to a surface?",choices:["Friction","Normal force","Weight","Tension"],answer:1},
+  {q:"A 25 kg object rests on a table. What is its weight?",choices:["25 N","245 N","250 N","98 N"],answer:1},
+  {q:"A 25 kg object rests on a table. What is the normal force?",choices:["25 N","245 N","250 N","0 N"],answer:1},
+  {q:"If a force has both x and y components, what type of quantity is it?",choices:["Scalar","Vector","Constant","Unit"],answer:1},
+  {q:"If ΣFy is positive upward, what kind of acceleration could occur?",choices:["Upward acceleration","Downward acceleration","No acceleration","Sideways only"],answer:0},
+  {q:"If ΣFx is negative, what direction is the unbalanced force?",choices:["Left","Right","Up","Down"],answer:0}
+];
+
+function shuffleQuestions() {
+  allQuestions = [...quizQuestions].sort(() => Math.random() - 0.5);
+}
+
+function openRandomQuizSet() {
+  const panel = document.getElementById("quiz-panel");
+  const randomBtn = document.querySelector(".quiz-btn");
+
+  panel.classList.add("open");
+  randomBtn.style.display = "none";
+
+  shuffleQuestions();
+  currentQuestionIndex = 0;
+  answeredQuestions = {};
+  loadQuestion();
+}
+
+function loadQuestion() {
+  const container = document.getElementById("quiz-container");
+  const question = allQuestions[currentQuestionIndex];
+  const saved = answeredQuestions[currentQuestionIndex];
+
+  let choicesHTML = "";
+
+  question.choices.forEach((choice, index) => {
+    let checked = saved && saved.selectedIndex === index ? "checked" : "";
+    let disabled = saved ? "disabled" : "";
+
+    let extraClass = "";
+
+    if (saved) {
+      if (index === saved.correctIndex) {
+        extraClass = "correct-answer";
+      }
+
+      if (index === saved.selectedIndex && index !== saved.correctIndex) {
+        extraClass = "wrong-answer";
+      }
+    }
+
+    choicesHTML += `
+      <label class="answer-choice ${extraClass}" data-index="${index}">
+        <input type="radio" name="question" ${checked} ${disabled}>
+        ${choice}
+      </label>
+    `;
+  });
+
+  const isLastQuestion = currentQuestionIndex === allQuestions.length - 1;
+
+  container.innerHTML = `
+    <div class="quiz-question">
+      <p><strong>Q${currentQuestionIndex + 1} of ${allQuestions.length}:</strong> ${question.q}</p>
+
+      ${choicesHTML}
+
+      <button id="check-answer-btn" onclick="checkAnswer()" ${saved ? "disabled" : ""}>
+        Check Answer
+      </button>
+
+      <div class="quiz-nav-buttons">
+
+  ${
+    currentQuestionIndex > 0
+      ? `<button onclick="prevQuestion()" id="back-btn">Back</button>`
+      : ``
+  }
+
+  ${
+    isLastQuestion
+      ? `<button onclick="submitQuiz()" id="submit-btn">Submit</button>`
+      : `<button onclick="nextQuestion()" id="next-btn">Next</button>`
+  }
+
+</div>
+    </div>
+  `;
+}
+
+function showCheckButton() {
+  document.getElementById("check-answer-btn").style.display = "block";
+}
+
+function checkAnswer() {
+  const selected = document.querySelector('input[name="question"]:checked');
+  if (!selected) return;
+
+  const selectedIndex = Number(selected.parentElement.dataset.index);
+  const correctIndex = allQuestions[currentQuestionIndex].answer;
+
+  answeredQuestions[currentQuestionIndex] = {
+    selectedIndex: selectedIndex,
+    correctIndex: correctIndex
+  };
+
+  loadQuestion();
+}
+
+function nextQuestion() {
+  currentQuestionIndex++;
+
+  if (currentQuestionIndex >= allQuestions.length) {
+    currentQuestionIndex = allQuestions.length - 1;
+    loadQuestion();
+    return;
+  }
+
+  loadQuestion();
+}
+
+function prevQuestion() {
+  if (currentQuestionIndex > 0) {
+    currentQuestionIndex--;
+    loadQuestion();
+  }
+}
+
+function submitQuiz() {
+  let correct = 0;
+  let wrong = 0;
+
+  allQuestions.forEach((question, index) => {
+    const saved = answeredQuestions[index];
+
+    if (saved && saved.selectedIndex === question.answer) {
+      correct++;
+    } else {
+      wrong++;
+    }
+  });
+
+  const percent = Math.round((correct / allQuestions.length) * 100);
+
+  launchConfetti();
+
+  document.getElementById("quiz-container").innerHTML = `
+  <div class="quiz-question">
+    <h3>Quiz Results</h3>
+
+    <p><strong>Correct:</strong> ${correct}</p>
+    <p><strong>Wrong:</strong> ${wrong}</p>
+    <p><strong>Score:</strong> ${percent}%</p>
+
+    <button onclick="openRandomQuizSet()" class="quiz-btn">
+      Restart Quiz
+    </button>
+  </div>
+`;
+}
+
+function launchConfetti() {
+
+  const colors = [
+    "#ff4d4d",
+    "#4dff88",
+    "#4da6ff",
+    "#ffff66",
+    "#ff66ff",
+    "#ffffff"
+  ];
+
+  for (let i = 0; i < 120; i++) {
+
+    const confetti = document.createElement("div");
+    confetti.classList.add("confetti");
+
+    confetti.style.left = Math.random() * 100 + "vw";
+    confetti.style.backgroundColor =
+      colors[Math.floor(Math.random() * colors.length)];
+
+    confetti.style.width = Math.random() * 8 + 6 + "px";
+    confetti.style.height = confetti.style.width;
+
+    confetti.style.animationDuration =
+  (Math.random() * 3 + 7) + "s";
+
+  confetti.style.animationDelay =
+  (Math.random() * 2) + "s";
+
+    document.body.appendChild(confetti);
+
+    confetti.addEventListener("animationend", () => {
+  confetti.remove();
+   });
+  }
+}
+console.log("Quiz loaded. Total questions:", quizQuestions.length);
+</script>
+
+</body>
+</html>

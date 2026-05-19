@@ -1,0 +1,471 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  background: black;
+  color: white;
+}
+
+/* RULER BORDER */
+.ruler-frame {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  pointer-events: none;
+
+  box-shadow: inset 0 0 0 12px rgba(0, 0, 0, 0.85);
+
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      rgba(255,255,255,0.14) 0px,
+      rgba(255,255,255,0.14) 1px,
+      transparent 1px,
+      transparent 20px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255,255,255,0.1) 0px,
+      rgba(255,255,255,0.1) 1px,
+      transparent 1px,
+      transparent 20px
+    );
+}
+
+/* COLOR BACKGROUND */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+
+  background:
+    radial-gradient(circle at 30% 30%, red, transparent 40%),
+    radial-gradient(circle at 70% 40%, orange, transparent 45%),
+    radial-gradient(circle at 50% 80%, yellow, transparent 50%),
+    radial-gradient(circle at 20% 70%, orangered, transparent 45%);
+
+  animation: colorShift 10s linear infinite;
+}
+
+@keyframes colorShift {
+  0%   { filter: hue-rotate(0deg) brightness(1); }
+  25%  { filter: hue-rotate(90deg) brightness(1.1); }
+  50%  { filter: hue-rotate(180deg) brightness(1.2); }
+  75%  { filter: hue-rotate(270deg) brightness(1.1); }
+  100% { filter: hue-rotate(360deg) brightness(1); }
+}
+
+/* MAIN CENTER CONTENT */
+.container {
+  position: relative;
+  z-index: 2;
+
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+/* TITLE + ORBIT */
+.title-orbit-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+.title-orbit-wrapper h1 {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  font-size: 48px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 18px rgba(255,255,255,0.7);
+}
+
+/* ORBIT AREA */
+.orbit-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 360px;
+  height: 360px;
+
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.orbit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.orbit span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  font-size: 26px;
+  color: rgba(255,255,255,0.75);
+  text-shadow: 0 0 12px rgba(255,255,255,0.8);
+}
+
+/* SYMBOL PLACEMENT */
+.orbit span:nth-child(1) {
+  transform: rotate(0deg) translateX(175px);
+}
+
+.orbit span:nth-child(2) {
+  transform: rotate(90deg) translateX(175px);
+}
+
+.orbit span:nth-child(3) {
+  transform: rotate(180deg) translateX(175px);
+}
+
+.orbit span:nth-child(4) {
+  transform: rotate(270deg) translateX(175px);
+}
+
+/* ORBIT ANIMATION */
+.orbit1 {
+  animation: spin 14s linear infinite;
+}
+
+.orbit2 {
+  animation: spinReverse 20s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes spinReverse {
+  from { transform: rotate(360deg); }
+  to   { transform: rotate(0deg); }
+}
+
+/* COURSES BUTTON */
+button {
+  padding: 14px 32px;
+  font-size: 19px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+  background: white;
+  color: black;
+
+  box-shadow: 0 0 18px rgba(255,255,255,0.45);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 28px rgba(255,255,255,0.85);
+}
+
+/* COURSES PAGE */
+.courses-container {
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.courses-title {
+  font-size: 52px;
+  margin-bottom: 40px;
+  text-shadow: 0 0 18px rgba(255,255,255,0.7);
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.course-card {
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 18px;
+  padding: 30px 20px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.18);
+  backdrop-filter: blur(8px);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 32px rgba(255,255,255,0.45);
+}
+
+.course-card h2 {
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+.course-card p {
+  font-size: 17px;
+  margin-bottom: 25px;
+  color: rgba(255,255,255,0.85);
+}
+
+.course-card button,
+.back-button {
+  padding: 12px 24px;
+  font-size: 16px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 40px;
+  text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .course-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .course-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .courses-title {
+    font-size: 40px;
+  }
+}
+
+.course-page {
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  padding: 30px;
+}
+
+.course-page h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 18px rgba(255,255,255,0.7);
+}
+
+.coming-text {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: rgba(255,255,255,0.85);
+}
+
+.tabs {
+  margin: 20px 0;
+}
+
+.tabs button {
+  margin: 5px;
+}
+
+.tab-content {
+  margin-top: 20px;
+}
+
+.lesson-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.lesson-content ul {
+  padding-left: 20px;
+}
+
+.lesson-content li {
+  margin-bottom: 6px;
+}
+
+.tabs button.active {
+  background: white;
+  color: black;
+}
+
+.problems-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* 🔥 THIS is the key fix */
+  gap: 40px;
+}
+
+.back-button {
+  margin-top: 40px; /* increase this if you want more space */
+}
+
+.quiz-question {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.answer-choice {
+  display: block;
+  margin: 6px 0;
+}
+
+/* Check button stays centered */
+#check-answer-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Back + Next stay together centered */
+.quiz-nav-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  margin-top: 10px;
+}
+
+#back-btn,
+#next-btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* answer colors */
+.correct-answer {
+  background: rgba(0, 255, 0, 0.25);
+  border: 2px solid limegreen;
+}
+
+.wrong-answer {
+  background: rgba(255, 0, 0, 0.25);
+  border: 2px solid red;
+}
+
+.journey-link {
+  display: inline-block;
+  margin-top: 8px;
+}
+
+#submit-btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.quiz-warning {
+  max-width: 700px;
+  margin: 15px auto 0 auto;
+  padding: 12px 16px;
+
+  background: rgba(255, 165, 0, 0.12);
+  border: 1px solid rgba(255, 165, 0, 0.5);
+  border-radius: 10px;
+
+  color: rgba(255,255,255,0.9);
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: center;
+
+  box-shadow: 0 0 12px rgba(255,165,0,0.2);
+}
+
+/* CONFETTI */
+.confetti {
+  position: fixed;
+  top: -20px;
+
+  width: 12px;
+  height: 12px;
+
+  opacity: 0.9;
+  z-index: 9999;
+
+  animation-name: confettiFall;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes confettiFall {
+
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(120vh) rotate(1080deg);
+    opacity: 0;
+  }
+}
+
+.reviews-link {
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.review-form label {
+  font-weight: bold;
+}
+
+.review-form input,
+.review-form select,
+.review-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+.review-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.donate-link {
+  display: inline-block;
+  margin-top: 8px;
+}
