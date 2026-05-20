@@ -469,3 +469,35 @@ button:hover {
   display: inline-block;
   margin-top: 8px;
 }
+
+/* GLASS CONTENT PANELS */
+.lesson-content,
+.quiz-question,
+.formula-sheet,
+#real .lesson-content,
+#video,
+#quiz-panel {
+  background: linear-gradient(
+    to bottom right,
+    rgba(40, 40, 40, 0.78),
+    rgba(15, 15, 15, 0.72)
+  );
+
+  border: 1px solid rgba(255,255,255,0.15);
+
+  backdrop-filter: blur(10px);
+
+  border-radius: 18px;
+
+  padding: 28px;
+
+  box-shadow:
+    0 0 20px rgba(0,0,0,0.45),
+    0 0 10px rgba(255,255,255,0.08);
+}
+
+.lesson-content,
+.formula-sheet,
+.quiz-question {
+  margin-top: 20px;
+}
