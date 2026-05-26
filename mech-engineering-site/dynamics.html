@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dynamics - Mechanical Engineering Helper</title>
+  <title>dynamics - Mechanical Engineering Helper</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,16 +13,1283 @@
   <div class="background"></div>
 
   <div class="course-page">
-    <h1>Dynamics</h1>
+    <h1>dynamics</h1>
 
-    <p class="coming-text">
-      More content coming soon. This course is currently being built.
+    <!-- TAB BUTTONS -->
+    <div class="tabs">
+      <button onclick="showSection('lessons', this)">Lessons</button>
+<button onclick="showSection('problem', this)">Problems</button>
+<button onclick="showSection('qui', this)">Quiz</button>
+<button onclick="showSection('rea', this)">Real World Applications</button>
+<button onclick="showSection('vide', this)">Video</button>
+    </div>
+
+    <div id="lessons" class="tab-content" style="display:none;">
+
+  <div class="lesson-content">
+
+<h2>Forces and Motion Combined</h2>
+
+<p>
+Dynamics is the branch of mechanics that studies how forces affect motion.
+Unlike statics, where forces are balanced and acceleration is zero,
+dynamics focuses on situations where forces are unbalanced and cause objects
+to accelerate.
+</p>
+
+<p>
+Dynamics combines ideas from both statics and kinematics.
+Statics teaches us about forces. Kinematics teaches us about motion.
+Dynamics explains how forces create motion.
+</p>
+
+<h3>1. Newton's First Law</h3>
+
+<p>
+Newton's First Law states that an object will remain at rest or continue moving
+at a constant velocity unless acted upon by an unbalanced force.
+</p>
+
+<p>
+This concept is called inertia.
+</p>
+
+<p>
+Examples:
+</p>
+
+<ul>
+<li>A book remains on a table until pushed.</li>
+<li>A hockey puck slides until friction slows it down.</li>
+<li>A car continues moving unless braking forces act on it.</li>
+</ul>
+
+<h3>2. Inertia</h3>
+
+<p>
+Inertia is an object's tendency to resist changes in motion.
+The greater the mass of an object, the greater its inertia.
+</p>
+
+<p>
+This means heavier objects require more force to start moving,
+stop moving, or change direction.
+</p>
+
+<p>
+Examples:
+</p>
+
+<ul>
+<li>A loaded truck is harder to push than an empty cart.</li>
+<li>A large machine takes longer to stop after being turned off.</li>
+<li>A passenger lurches forward when a car suddenly brakes.</li>
+</ul>
+
+<p>
+Understanding inertia helps engineers design safer vehicles,
+machines, and transportation systems.
+</p>
+
+<h3>3. Newton's Second Law</h3>
+
+<p>
+Newton's Second Law explains how forces create acceleration.
+</p>
+
+<p>
+The equation is:
+</p>
+
+<p><strong>F = ma</strong></p>
+
+<ul>
+<li>F = Net Force (N)</li>
+<li>m = Mass (kg)</li>
+<li>a = Acceleration (m/s²)</li>
+</ul>
+
+<p>
+This means acceleration depends on both force and mass.
+</p>
+
+<ul>
+<li>More force produces more acceleration.</li>
+<li>More mass produces less acceleration.</li>
+</ul>
+
+<p>
+For example, a shopping cart accelerates more easily than a fully loaded truck
+because the truck has much greater mass.
+</p>
+
+<h3>4. Newton's Third Law</h3>
+
+<p>
+Newton's Third Law states:
+</p>
+
+<p>
+<strong>For every action, there is an equal and opposite reaction.</strong>
+</p>
+
+<p>
+Whenever one object exerts a force on another object, the second object exerts
+an equal force back.
+</p>
+
+<p>
+Examples:
+</p>
+
+<ul>
+<li>Walking forward by pushing backward on the ground.</li>
+<li>Rocket engines pushing exhaust downward while the rocket moves upward.</li>
+<li>A swimmer pushing water backward to move forward.</li>
+</ul>
+
+<h3>5. Net Force</h3>
+
+<p>
+The net force is the sum of all forces acting on an object.
+</p>
+
+<p>
+If the net force equals zero:
+</p>
+
+<ul>
+<li>No acceleration occurs.</li>
+<li>The object remains in equilibrium.</li>
+</ul>
+
+<p>
+If the net force does not equal zero:
+</p>
+
+<ul>
+<li>The object accelerates.</li>
+</ul>
+
+<p>
+Examples:
+</p>
+
+<ul>
+<li>50 N right and 50 N left = 0 N net force.</li>
+<li>80 N right and 20 N left = 60 N net force right.</li>
+</ul>
+
+<h3>6. Forces as Vectors</h3>
+
+<p>
+Forces are vector quantities, meaning they have both magnitude
+and direction.
+</p>
+
+<p>
+Because direction matters, engineers often break forces into
+horizontal and vertical components.
+</p>
+
+<p>
+For example, a force acting at an angle may have:
+</p>
+
+<ul>
+<li>A horizontal component (Fx)</li>
+<li>A vertical component (Fy)</li>
+</ul>
+
+<p>
+Analyzing components allows engineers to determine how each
+part of a force contributes to motion.
+</p>
+
+<p>
+This process is used constantly in mechanical engineering,
+civil engineering, and aerospace engineering.
+</p>
+
+<h3>7. Free Body Diagrams</h3>
+
+<p>
+Engineers often use Free Body Diagrams (FBDs) to visualize forces.
+</p>
+
+<p>
+A Free Body Diagram shows all forces acting on an object.
+</p>
+
+<p>
+Common forces include:
+</p>
+
+<ul>
+<li>Weight (W)</li>
+<li>Normal Force (N)</li>
+<li>Tension (T)</li>
+<li>Friction (F)</li>
+<li>Applied Force</li>
+</ul>
+
+<p>
+Free Body Diagrams are one of the most important tools in engineering and physics.
+</p>
+
+<h3>8. Why Free Body Diagrams Matter</h3>
+
+<p>
+Free Body Diagrams are one of the most powerful tools used by
+engineers and physicists.
+</p>
+
+<p>
+Before solving almost any force problem, engineers first create
+a Free Body Diagram.
+</p>
+
+<p>
+The diagram helps identify:
+</p>
+
+<ul>
+<li>All forces acting on the object</li>
+<li>Force directions</li>
+<li>Missing forces</li>
+<li>Possible acceleration directions</li>
+</ul>
+
+<p>
+Without Free Body Diagrams, complex engineering problems become
+much more difficult to analyze correctly.
+</p>
+
+<h3>9. Friction</h3>
+
+<p>
+Friction opposes motion between surfaces.
+</p>
+
+<p>
+The friction equation is:
+</p>
+
+<p><strong>F = μN</strong></p>
+
+<ul>
+<li>F = Friction Force</li>
+<li>μ = Coefficient of Friction</li>
+<li>N = Normal Force</li>
+</ul>
+
+<p>
+Friction can:
+</p>
+
+<ul>
+<li>Slow objects down.</li>
+<li>Prevent slipping.</li>
+<li>Create heat.</li>
+</ul>
+
+<h3>10. Static vs. Kinetic Friction</h3>
+
+<p>
+There are two main types of friction.
+</p>
+
+<p>
+<strong>Static Friction</strong> acts when objects are not moving
+relative to one another.
+</p>
+
+<p>
+Static friction prevents motion from starting.
+</p>
+
+<p>
+<strong>Kinetic Friction</strong> acts when surfaces are already
+sliding against one another.
+</p>
+
+<p>
+Kinetic friction usually has a smaller magnitude than static friction.
+</p>
+
+<p>
+Examples:
+</p>
+
+<ul>
+<li>Pushing a heavy box requires extra force to start moving it.</li>
+<li>Once the box begins sliding, less force may be needed to keep it moving.</li>
+</ul>
+
+<h3>11. Types of Acceleration</h3>
+
+<p>
+Acceleration can occur in several ways.
+</p>
+
+<ul>
+<li>Speeding up</li>
+<li>Slowing down</li>
+<li>Changing direction</li>
+</ul>
+
+<p>
+Many students think acceleration only means speeding up,
+but any change in velocity creates acceleration.
+</p>
+
+<p>
+A car moving around a curve at constant speed is still accelerating
+because its direction changes continuously.
+</p>
+
+<h3>12. Circular Motion (Intro)</h3>
+
+<p>
+Objects moving in circles constantly change direction.
+</p>
+
+<p>
+Even if speed stays constant, changing direction means acceleration exists.
+</p>
+
+<p>
+This acceleration is called centripetal acceleration.
+</p>
+
+<p>
+Examples:
+</p>
+
+<ul>
+<li>Cars driving around curves.</li>
+<li>Roller coasters.</li>
+<li>Satellites orbiting Earth.</li>
+</ul>
+
+<h3>13. Momentum</h3>
+
+<p>
+Momentum describes the quantity of motion possessed by an object.
+</p>
+
+<p>
+The equation for momentum is:
+</p>
+
+<p><strong>p = mv</strong></p>
+
+<ul>
+<li>p = Momentum</li>
+<li>m = Mass</li>
+<li>v = Velocity</li>
+</ul>
+
+<p>
+Momentum increases when either mass or velocity increases.
+</p>
+
+<p>
+A fast-moving truck has much more momentum than a bicycle because
+its mass is significantly greater.
+</p>
+
+<p>
+Momentum is important because changing momentum requires force.
+</p>
+
+<p>
+Engineers study momentum when designing:
+</p>
+
+<ul>
+<li>Vehicle safety systems</li>
+<li>Airbags</li>
+<li>Seatbelts</li>
+<li>Crash structures</li>
+<li>Protective equipment</li>
+</ul>
+
+<p>
+Understanding momentum helps engineers reduce injuries and improve safety.
+</p>
+
+<h3>14. Work and Energy (Introduction)</h3>
+
+<p>
+Dynamics often connects to energy concepts.
+</p>
+
+<p>
+Work occurs whenever a force causes displacement.
+</p>
+
+<p>
+The basic equation for work is:
+</p>
+
+<p><strong>Work = Force × Distance</strong></p>
+
+<p>
+Energy is the ability to do work.
+</p>
+
+<p>
+Machines constantly convert energy into motion.
+</p>
+
+<p>
+Examples include:
+</p>
+
+<ul>
+<li>Electric motors turning shafts</li>
+<li>Cars converting fuel into motion</li>
+<li>Roller coasters converting potential energy into kinetic energy</li>
+</ul>
+
+<p>
+Later engineering courses study these relationships in much greater detail.
+</p>
+
+<h3>15. Why Dynamics Matters</h3>
+
+<p>
+Dynamics is one of the most important subjects in mechanical engineering because
+machines rarely remain motionless.
+</p>
+
+<p>
+Engineers use dynamics when designing:
+</p>
+
+<ul>
+<li>Cars</li>
+<li>Aircraft</li>
+<li>Robots</li>
+<li>Industrial Machines</li>
+<li>Roller Coasters</li>
+<li>Manufacturing Systems</li>
+</ul>
+
+<p>
+Understanding dynamics allows engineers to predict how systems move,
+accelerate, stop, and respond to forces.
+</p>
+
+</div>
+
+</div>
+
+    <div id="problems" class="tab-content" style="display:none;">
+
+  <div class="problems-layout">
+
+    <!-- LEFT SIDE: PROBLEMS -->
+    <div class="problems-content">
+
+      <div class="lesson-content">
+
+        <h2>Example Problems</h2>
+
+        <h3>Problem 1: Calculating Stress</h3>
+
+        <p>
+          A metal rod has a cross-sectional area of 0.005 m². A force of 1,000 N is applied to it.
+          Find the stress in the rod.
+        </p>
+
+        <p><strong>Step 1: Use the stress formula</strong></p>
+        <p>σ = F / A</p>
+
+        <p><strong>Step 2: Substitute values</strong></p>
+        <p>σ = 1000 / 0.005</p>
+
+        <p><strong>Step 3: Calculate</strong></p>
+        <p>σ = 200,000 Pa</p>
+
+        <p><strong>Answer:</strong> The stress is 200,000 Pa, or 200 kPa.</p>
+
+        <hr>
+
+        <h3>Problem 2: Calculating Strain</h3>
+
+        <p>
+          A 2 m long rod stretches by 0.004 m when a load is applied.
+          Find the strain.
+        </p>
+
+        <p><strong>Step 1: Use the strain formula</strong></p>
+        <p>ε = ΔL / L₀</p>
+
+        <p><strong>Step 2: Substitute values</strong></p>
+        <p>ε = 0.004 / 2</p>
+
+        <p><strong>Step 3: Calculate</strong></p>
+        <p>ε = 0.002</p>
+
+        <p><strong>Answer:</strong> The strain is 0.002. Strain has no units.</p>
+
+        <hr>
+
+        <h3>Problem 3: Finding Force from Stress</h3>
+
+        <p>
+          A part experiences a stress of 500,000 Pa over an area of 0.01 m².
+          Find the applied force.
+        </p>
+
+        <p><strong>Step 1: Start with the stress formula</strong></p>
+        <p>σ = F / A</p>
+
+        <p><strong>Step 2: Rearrange to solve for force</strong></p>
+        <p>F = σA</p>
+
+        <p><strong>Step 3: Substitute values</strong></p>
+        <p>F = 500,000 × 0.01</p>
+
+        <p><strong>Step 4: Calculate</strong></p>
+        <p>F = 5,000 N</p>
+
+        <p><strong>Answer:</strong> The applied force is 5,000 N.</p>
+
+        <hr>
+
+        <h3>Problem 4: Finding Change in Length</h3>
+
+        <p>
+          A rod has an original length of 3 m and a strain of 0.0015.
+          Find the change in length.
+        </p>
+
+        <p><strong>Step 1: Use the strain formula</strong></p>
+        <p>ε = ΔL / L₀</p>
+
+        <p><strong>Step 2: Rearrange to solve for change in length</strong></p>
+        <p>ΔL = εL₀</p>
+
+        <p><strong>Step 3: Substitute values</strong></p>
+        <p>ΔL = 0.0015 × 3</p>
+
+        <p><strong>Step 4: Calculate</strong></p>
+        <p>ΔL = 0.0045 m</p>
+
+        <p><strong>Answer:</strong> The rod stretches by 0.0045 m, or 4.5 mm.</p>
+
+        <hr>
+
+        <h3>Problem 5: Hooke's Law / Young's Modulus</h3>
+
+        <p>
+          A material has a stress of 400 MPa and a strain of 0.002.
+          Find Young's Modulus.
+        </p>
+
+        <p><strong>Step 1: Use Hooke's Law</strong></p>
+        <p>σ = Eε</p>
+
+        <p><strong>Step 2: Rearrange to solve for Young's Modulus</strong></p>
+        <p>E = σ / ε</p>
+
+        <p><strong>Step 3: Convert stress to Pascals</strong></p>
+        <p>400 MPa = 400,000,000 Pa</p>
+
+        <p><strong>Step 4: Substitute values</strong></p>
+        <p>E = 400,000,000 / 0.002</p>
+
+        <p><strong>Step 5: Calculate</strong></p>
+        <p>E = 200,000,000,000 Pa</p>
+
+        <p><strong>Answer:</strong> Young's Modulus is 200 GPa.</p>
+
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE: FORMULA SHEET -->
+    <div class="formula-sheet">
+
+      <h3>Formula Sheet</h3>
+
+      <p>
+        <strong>Stress:</strong><br>
+        σ = F / A<br>
+        σ = Stress (Pa)<br>
+        F = Force (N)<br>
+        A = Area (m²)
+      </p>
+
+      <p>
+        <strong>Strain:</strong><br>
+        ε = ΔL / L₀<br>
+        ε = Strain<br>
+        ΔL = Change in Length (m)<br>
+        L₀ = Original Length (m)
+      </p>
+
+      <p>
+        <strong>Hooke's Law:</strong><br>
+        σ = Eε<br>
+        E = Young's Modulus (Pa)<br>
+        σ = Stress (Pa)<br>
+        ε = Strain
+      </p>
+
+      <p>
+        <strong>Force from Stress:</strong><br>
+        F = σA
+      </p>
+
+      <p>
+        <strong>Change in Length:</strong><br>
+        ΔL = εL₀
+      </p>
+
+      <p>
+        <strong>Unit Conversions:</strong><br>
+        1 MPa = 1,000,000 Pa<br>
+        1 GPa = 1,000,000,000 Pa<br>
+        1 m = 1000 mm
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+
+   <div id="quiz" class="tab-content" style="display:none;">
+  <h2>dynamics Quiz</h2>
+
+  <button type="button" onclick="openRandomQuizSet()" class="quiz-btn">
+    Random Quiz
+  </button>
+
+  <p class="quiz-warning">
+    Warning: Once you select an answer, click the "Check Answer" button to lock in your response.
+    Answers that are not checked before submitting the quiz will NOT count, and unanswered questions
+    will be marked wrong.
+  </p>
+
+  <div id="quiz-panel" class="quiz-panel">
+    <h3 id="quiz-set-title"></h3>
+    <div id="quiz-container"></div>
+  </div>
+</div>
+
+    <div id="real" class="tab-content" style="display:none;">
+  <div class="lesson-content">
+
+    <h2>Real World Applications of dynamics</h2>
+
+    <p>
+      Strength of Materials is used whenever engineers need to understand whether
+      a material or part can safely handle forces without bending too much,
+      stretching too far, or permanently deforming.
     </p>
 
+    <hr>
+
+    <h3>1. Bridges</h3>
+    <p>
+      Bridges experience stress and strain from their own weight, vehicles,
+      wind, and movement. Engineers must make sure the bridge materials can
+      support these loads without failing.
+    </p>
+
+    <p><strong>Concepts used:</strong></p>
+    <ul>
+      <li><strong>Stress:</strong> forces spread through beams and supports.</li>
+      <li><strong>Strain:</strong> small changes in shape happen under loading.</li>
+      <li><strong>Elastic deformation:</strong> bridges should return to normal after loads pass.</li>
+    </ul>
+
+    <hr>
+
+    <h3>2. Crane Cables</h3>
+    <p>
+      Crane cables experience tensile stress when lifting heavy objects.
+      The cable stretches slightly under load, but it must stay within the
+      elastic region so it does not permanently deform or fail.
+    </p>
+
+    <p><strong>Concepts used:</strong></p>
+    <ul>
+      <li><strong>Tensile stress:</strong> pulling force in the cable.</li>
+      <li><strong>Strain:</strong> small stretching of the cable.</li>
+      <li><strong>Young's Modulus:</strong> stiffness of the cable material.</li>
+    </ul>
+
+    <hr>
+
+    <h3>3. Bolts and Fasteners</h3>
+    <p>
+      Bolts hold machine parts together and can experience tensile,
+      compressive, or shear stress depending on how the load is applied.
+      Engineers must choose bolts strong enough for the expected forces.
+    </p>
+
+    <p><strong>Concepts used:</strong></p>
+    <ul>
+      <li><strong>Stress:</strong> force acting over the bolt's cross-sectional area.</li>
+      <li><strong>Shear stress:</strong> sliding forces across the bolt.</li>
+      <li><strong>Plastic deformation:</strong> must be avoided in normal use.</li>
+    </ul>
+
+    <hr>
+
+    <h3>4. Vehicle Frames</h3>
+    <p>
+      A vehicle frame supports passengers, the engine, cargo, and forces from
+      the road. The frame must be stiff enough to resist excessive deformation
+      while still being light enough to be efficient.
+    </p>
+
+    <p><strong>Concepts used:</strong></p>
+    <ul>
+      <li><strong>Stress:</strong> loads from passengers and equipment.</li>
+      <li><strong>Strain:</strong> small bending or stretching in the frame.</li>
+      <li><strong>Young's Modulus:</strong> material stiffness.</li>
+    </ul>
+
+    <hr>
+
+    <h3>5. Aircraft Wings</h3>
+    <p>
+      Aircraft wings bend slightly during flight because aerodynamic forces act
+      on them. Engineers use stress and strain analysis to make sure the wings
+      flex safely without permanent deformation.
+    </p>
+
+    <p><strong>Concepts used:</strong></p>
+    <ul>
+      <li><strong>Stress:</strong> internal resistance to aerodynamic loads.</li>
+      <li><strong>Strain:</strong> wing deformation during flight.</li>
+      <li><strong>Elastic deformation:</strong> wings should return to shape after loading.</li>
+    </ul>
+
+    <hr>
+
+    <h3>6. Shelves and Brackets</h3>
+    <p>
+      Shelves and brackets support weight from objects placed on them.
+      If the material is too weak or the cross-sectional area is too small,
+      the stress may become too high and the bracket may bend or fail.
+    </p>
+
+    <p><strong>Concepts used:</strong></p>
+    <ul>
+      <li><strong>Stress:</strong> force from the load divided by area.</li>
+      <li><strong>Strain:</strong> bending or stretching under load.</li>
+      <li><strong>Elastic vs plastic deformation:</strong> temporary versus permanent bending.</li>
+    </ul>
+
+    <hr>
+
+    <h3>7. Springs and Flexible Parts</h3>
+    <p>
+      Springs and flexible parts are designed to deform and then return to their
+      original shape. This means they are intended to operate mainly in the
+      elastic region.
+    </p>
+
+    <p><strong>Concepts used:</strong></p>
+    <ul>
+      <li><strong>Elastic deformation:</strong> returning to original shape.</li>
+      <li><strong>Strain:</strong> deformation caused by loading.</li>
+      <li><strong>Young's Modulus:</strong> stiffness of the material.</li>
+    </ul>
+
+    <hr>
+
+    <h3>8. Metal Rods and Support Columns</h3>
+    <p>
+      Rods and columns are used in buildings, machines, and structures.
+      A rod in tension may stretch, while a column in compression may shorten
+      or deform if the load is too high.
+    </p>
+
+    <p><strong>Concepts used:</strong></p>
+    <ul>
+      <li><strong>Tensile stress:</strong> pulling forces in rods.</li>
+      <li><strong>Compressive stress:</strong> squeezing forces in columns.</li>
+      <li><strong>Strain:</strong> change in length compared to original length.</li>
+    </ul>
+
+    <hr>
+
+    <h3>9. Tools and Machine Parts</h3>
+    <p>
+      Wrenches, shafts, brackets, gears, and machine frames all experience
+      forces during use. Strength of Materials helps engineers design these
+      parts so they do not bend, stretch, crack, or permanently deform under
+      normal loading.
+    </p>
+
+    <p><strong>Concepts used:</strong></p>
+    <ul>
+      <li><strong>Stress:</strong> internal force per unit area.</li>
+      <li><strong>Strain:</strong> deformation caused by stress.</li>
+      <li><strong>Plastic deformation:</strong> permanent deformation that designers try to avoid.</li>
+    </ul>
+
+    <hr>
+
+    <h3>10. Future Experiment Demonstrations</h3>
+    <p>
+      This section can later include your own demonstrations, such as stretching
+      a rubber band, loading a small beam, testing a bracket, or comparing how
+      different materials deform under similar loads.
+    </p>
+
+    <p><strong>Concepts used:</strong></p>
+    <ul>
+      <li><strong>Stress:</strong> force applied over an area.</li>
+      <li><strong>Strain:</strong> visible or measured deformation.</li>
+      <li><strong>Elastic and plastic deformation:</strong> whether the material returns to shape.</li>
+    </ul>
+
+  </div>
+</div>
+
+    <div id="video" class="tab-content" style="display:none;">
+
+  <div class="lesson-content">
+
+    <h2>dynamics Experiment Video</h2>
+
+    <p>
+      
+    </p>
+
+    <div class="video-container">
+
+      <iframe
+    width="800"
+    height="450"
+    src=""
+    title="dynamics Experiment"
+    frameborder="0"
+    allowfullscreen>
+     </iframe>
+
+    </div>
+
+    <h3></h3>
+    <p>
+      
+    </p>
+
+    <h3></h3>
+    <ul>
+      
+    </ul>
+
+  </div>
+
+</div>
+
+    <!-- BACK BUTTON -->
     <a href="courses.html">
       <button class="back-button">Back to Courses</button>
     </a>
   </div>
+
+  <!-- JAVASCRIPT -->
+  <script>
+function showSection(id, button) {
+  const section = document.getElementById(id);
+  const isOpen = section.style.display === "block";
+
+  document.querySelectorAll(".tab-content").forEach(s => {
+    s.style.setProperty("display", "none", "important");
+  });
+
+  document.querySelectorAll(".tabs button").forEach(btn => {
+    btn.classList.remove("active");
+  });
+
+  if (!isOpen) {
+    section.style.setProperty("display", "block", "important");
+    button.classList.add("active");
+  }
+}
+</script>
+
+<script>
+let currentQuestionIndex = 0;
+let allQuestions = [];
+let answeredQuestions = {};
+
+const quizQuestions = [
+  {q:"What is Strength of Materials mainly about?",choices:["How materials respond to forces","How fluids move","How circuits work","How objects orbit"],answer:0},
+  {q:"Why do engineers study Strength of Materials?",choices:["To make parts safely withstand loads","To remove all forces","To make materials weightless","To avoid using equations"],answer:0},
+  {q:"What does stress measure?",choices:["Internal force per unit area","Change in temperature","Total distance traveled","Speed over time"],answer:0},
+  {q:"What symbol is commonly used for stress?",choices:["σ","ε","E","ΔL"],answer:0},
+  {q:"What is the formula for stress?",choices:["σ = F / A","ε = ΔL / L₀","σ = Eε","F = ma"],answer:0},
+  {q:"In the stress formula, what does F represent?",choices:["Applied force","Final length","Friction","Frequency"],answer:0},
+  {q:"In the stress formula, what does A represent?",choices:["Cross-sectional area","Acceleration","Angle","Original length"],answer:0},
+  {q:"What happens to stress if force increases and area stays the same?",choices:["Stress increases","Stress decreases","Stress becomes zero","Stress stays the same"],answer:0},
+  {q:"What happens to stress if area increases and force stays the same?",choices:["Stress decreases","Stress increases","Stress doubles automatically","Stress becomes strain"],answer:0},
+  {q:"Stress is usually measured in what type of unit?",choices:["Pressure units","Length units","Time units","Mass units"],answer:0},
+
+  {q:"Which unit is commonly used for stress?",choices:["Pascals","Meters","Kilograms","Seconds"],answer:0},
+  {q:"What does MPa stand for?",choices:["Megapascal","Meter per acceleration","Mechanical pressure amount","Mass per area"],answer:0},
+  {q:"A larger area helps reduce stress because the force is spread over what?",choices:["More area","Less area","More time","Less mass"],answer:0},
+  {q:"What type of stress comes from pulling?",choices:["Tensile stress","Compressive stress","Thermal stress","Electrical stress"],answer:0},
+  {q:"What type of stress comes from pushing or squeezing?",choices:["Compressive stress","Tensile stress","Magnetic stress","Velocity stress"],answer:0},
+  {q:"What type of stress acts parallel to a surface?",choices:["Shear stress","Tensile stress","Compressive stress","Normal force"],answer:0},
+  {q:"A cable being pulled is mainly experiencing what type of stress?",choices:["Tensile stress","Compressive stress","Shear stress","No stress"],answer:0},
+  {q:"A column being squeezed downward is mainly experiencing what?",choices:["Compressive stress","Tensile stress","Electrical stress","Velocity"],answer:0},
+  {q:"A force causing layers of material to slide is related to what?",choices:["Shear stress","Tensile stress","Compressive stress","Young's strain"],answer:0},
+  {q:"What does strain describe?",choices:["Deformation caused by loading","Force per unit area","The weight of an object","The speed of a part"],answer:0},
+
+  {q:"What symbol is commonly used for strain?",choices:["ε","σ","E","F"],answer:0},
+  {q:"What is the formula for strain?",choices:["ε = ΔL / L₀","σ = F / A","F = σA","W = mg"],answer:0},
+  {q:"In the strain formula, what does ΔL mean?",choices:["Change in length","Original length","Applied force","Area"],answer:0},
+  {q:"In the strain formula, what does L₀ mean?",choices:["Original length","Final force","Stress","Area"],answer:0},
+  {q:"Why does strain have no units?",choices:["It is a ratio of two lengths","It is a force","It is measured in Pascals","It is always zero"],answer:0},
+  {q:"If an object stretches more, what happens to strain?",choices:["Strain increases","Strain decreases","Strain becomes stress","Strain disappears"],answer:0},
+  {q:"If original length is larger but change in length stays the same, strain becomes what?",choices:["Smaller","Larger","Always zero","Equal to stress"],answer:0},
+  {q:"A rod changes length from a force. That change relates most directly to what?",choices:["Strain","Pressure","Velocity","Temperature"],answer:0},
+  {q:"Stress describes the loading, while strain describes what?",choices:["The resulting deformation","The color change","The weight only","The time taken"],answer:0},
+  {q:"Elastic deformation means the material does what after the load is removed?",choices:["Returns to its original shape","Stays permanently deformed","Breaks instantly","Turns into liquid"],answer:0},
+
+  {q:"Plastic deformation means the material does what after the load is removed?",choices:["Stays permanently deformed","Returns fully to original shape","Has no stress","Has no strain"],answer:0},
+  {q:"Engineers usually want parts to stay in what region during normal operation?",choices:["Elastic region","Plastic region","Broken region","Melted region"],answer:0},
+  {q:"Which deformation is temporary?",choices:["Elastic deformation","Plastic deformation","Permanent deformation","Fracture"],answer:0},
+  {q:"Which deformation is permanent?",choices:["Plastic deformation","Elastic deformation","Temporary deformation","No deformation"],answer:0},
+  {q:"If a spring-like material returns to its shape, it experienced what?",choices:["Elastic deformation","Plastic deformation","Failure","No load"],answer:0},
+  {q:"If a bent metal piece stays bent after unloading, it experienced what?",choices:["Plastic deformation","Elastic deformation","No strain","No stress"],answer:0},
+  {q:"Hooke's Law describes the relationship between what?",choices:["Stress and strain","Mass and speed","Heat and time","Force and color"],answer:0},
+  {q:"What is the Hooke's Law formula from the lesson?",choices:["σ = Eε","ε = ΔL / L₀","σ = F / A","F = σA"],answer:0},
+  {q:"In σ = Eε, what does E represent?",choices:["Young's Modulus","Elastic strain only","Energy loss","External force"],answer:0},
+  {q:"Young's Modulus is a measure of what?",choices:["Stiffness","Weight","Color","Speed"],answer:0},
+
+  {q:"A material with larger Young's Modulus resists deformation how?",choices:["More effectively","Less effectively","Not at all","Only when hot"],answer:0},
+  {q:"Hooke's Law applies while the material remains in what region?",choices:["Elastic region","Plastic region","Broken region","Melted region"],answer:0},
+  {q:"If stress and strain are proportional, the material is behaving how?",choices:["Elastically","Randomly","Permanently deformed","Without force"],answer:0},
+  {q:"What does a high Young's Modulus usually mean?",choices:["The material is stiffer","The material is weaker automatically","The material has no area","The material has no stress"],answer:0},
+  {q:"What formula can be rearranged to find force from stress?",choices:["σ = F / A","ε = ΔL / L₀","σ = Eε","v = d / t"],answer:0},
+  {q:"If σ = F / A, then F equals what?",choices:["σA","σ / A","A / σ","εL₀"],answer:0},
+  {q:"If ε = ΔL / L₀, then ΔL equals what?",choices:["εL₀","ε / L₀","L₀ / ε","σA"],answer:0},
+  {q:"If σ = Eε, then E equals what?",choices:["σ / ε","σε","ε / σ","F / A"],answer:0},
+  {q:"A bridge supporting vehicles is an example where engineers use what?",choices:["Stress and strain analysis","Only color design","No calculations","Only coding"],answer:0},
+  {q:"Bolts holding machine components together are affected by what?",choices:["Stress and strain","Only sound","Only light","No forces"],answer:0},
+
+  {q:"Crane cables lifting heavy objects mainly deal with what pulling effect?",choices:["Tensile stress","Compressive stress","No stress","Thermal motion"],answer:0},
+  {q:"Vehicle frames supporting passengers must be designed to handle what?",choices:["Loads safely","No forces","Only air","Only color"],answer:0},
+  {q:"Aircraft wings carrying aerodynamic loads require what kind of analysis?",choices:["Stress and strain analysis","Grammar analysis","Music analysis","Only temperature reading"],answer:0},
+  {q:"Stress is caused when external force creates internal resisting forces inside what?",choices:["A material","Empty space","Only water","Only air"],answer:0},
+  {q:"The cross-sectional area in stress calculations is the area resisting what?",choices:["The applied force","The clock time","The color","The website layout"],answer:0},
+  {q:"If force is 1000 N and area is 0.005 m², what is stress?",choices:["200,000 Pa","5 Pa","995 Pa","0.000005 Pa"],answer:0},
+  {q:"If force is 500 N and area is 0.01 m², what is stress?",choices:["50,000 Pa","5 Pa","500 Pa","0.02 Pa"],answer:0},
+  {q:"If force is 2000 N and area is 0.02 m², what is stress?",choices:["100,000 Pa","40 Pa","2000 Pa","0.00001 Pa"],answer:0},
+  {q:"If force is 300 N and area is 0.003 m², what is stress?",choices:["100,000 Pa","900 Pa","0.00001 Pa","303 Pa"],answer:0},
+  {q:"If force is 800 N and area is 0.004 m², what is stress?",choices:["200,000 Pa","3200 Pa","0.005 Pa","804 Pa"],answer:0},
+
+  {q:"If stress is 200,000 Pa and area is 0.005 m², what is force?",choices:["1000 N","40 N","200,005 N","0.000025 N"],answer:0},
+  {q:"If stress is 50,000 Pa and area is 0.01 m², what is force?",choices:["500 N","50,000 N","5 N","0.0002 N"],answer:0},
+  {q:"If stress is 100,000 Pa and area is 0.02 m², what is force?",choices:["2000 N","5000 N","100 N","0.0000002 N"],answer:0},
+  {q:"If stress is 75,000 Pa and area is 0.004 m², what is force?",choices:["300 N","18,750 N","75,004 N","0.000053 N"],answer:0},
+  {q:"If stress is 120,000 Pa and area is 0.01 m², what is force?",choices:["1200 N","12 N","120,000 N","0.000083 N"],answer:0},
+  {q:"If a 2 m rod stretches by 0.004 m, what is strain?",choices:["0.002","0.008","500","2.004"],answer:0},
+  {q:"If a 4 m rod stretches by 0.008 m, what is strain?",choices:["0.002","0.032","500","4.008"],answer:0},
+  {q:"If a 5 m rod stretches by 0.01 m, what is strain?",choices:["0.002","0.05","500","5.01"],answer:0},
+  {q:"If a 10 m rod stretches by 0.02 m, what is strain?",choices:["0.002","0.2","500","10.02"],answer:0},
+  {q:"If a 1 m rod stretches by 0.001 m, what is strain?",choices:["0.001","1000","1.001","0.000001"],answer:0},
+
+  {q:"If strain is 0.002 and original length is 2 m, what is change in length?",choices:["0.004 m","0.001 m","4 m","1000 m"],answer:0},
+  {q:"If strain is 0.003 and original length is 3 m, what is change in length?",choices:["0.009 m","0.001 m","9 m","1000 m"],answer:0},
+  {q:"If strain is 0.0015 and original length is 3 m, what is change in length?",choices:["0.0045 m","0.5 m","2000 m","3.0015 m"],answer:0},
+  {q:"If strain is 0.002 and original length is 5 m, what is change in length?",choices:["0.01 m","0.4 m","2500 m","5.002 m"],answer:0},
+  {q:"If strain is 0.004 and original length is 1.5 m, what is change in length?",choices:["0.006 m","0.375 m","1.504 m","375 m"],answer:0},
+  {q:"If stress is 400,000,000 Pa and strain is 0.002, what is Young's Modulus?",choices:["200,000,000,000 Pa","800,000 Pa","400,000,000 Pa","0.000005 Pa"],answer:0},
+  {q:"If stress is 100,000,000 Pa and strain is 0.001, what is Young's Modulus?",choices:["100,000,000,000 Pa","100,000 Pa","100,000,001 Pa","0.00001 Pa"],answer:0},
+  {q:"If stress is 150,000,000 Pa and strain is 0.003, what is Young's Modulus?",choices:["50,000,000,000 Pa","450,000 Pa","150,000,003 Pa","0.00002 Pa"],answer:0},
+  {q:"If stress is 60,000,000 Pa and strain is 0.002, what is Young's Modulus?",choices:["30,000,000,000 Pa","120,000 Pa","60,000,002 Pa","0.00003 Pa"],answer:0},
+  {q:"If stress is 200,000,000 Pa and strain is 0.001, what is Young's Modulus?",choices:["200,000,000,000 Pa","200,000 Pa","200,000,001 Pa","0.000005 Pa"],answer:0},
+
+  {q:"1 MPa equals how many Pascals?",choices:["1,000,000 Pa","1,000 Pa","100 Pa","1 Pa"],answer:0},
+  {q:"1 GPa equals how many Pascals?",choices:["1,000,000,000 Pa","1,000,000 Pa","1000 Pa","10 Pa"],answer:0},
+  {q:"400 MPa equals how many Pascals?",choices:["400,000,000 Pa","400,000 Pa","400 Pa","4,000 Pa"],answer:0},
+  {q:"200 GPa equals how many Pascals?",choices:["200,000,000,000 Pa","200,000,000 Pa","200,000 Pa","200 Pa"],answer:0},
+  {q:"Which formula would you use to find stress if force and area are known?",choices:["σ = F / A","ε = ΔL / L₀","σ = Eε","ΔL = εL₀"],answer:0},
+  {q:"Which formula would you use to find strain if change in length and original length are known?",choices:["ε = ΔL / L₀","σ = F / A","F = σA","E = σ / ε"],answer:0},
+  {q:"Which formula would you use to find Young's Modulus if stress and strain are known?",choices:["E = σ / ε","F = σA","ΔL = εL₀","σ = F / A"],answer:0},
+  {q:"Which formula would you use to find applied force if stress and area are known?",choices:["F = σA","ε = ΔL / L₀","E = σ / ε","ΔL = εL₀"],answer:0},
+  {q:"Which formula would you use to find change in length if strain and original length are known?",choices:["ΔL = εL₀","F = σA","E = σ / ε","σ = F / A"],answer:0},
+  {q:"What is the main foundation topic of Strength of Materials in this lesson?",choices:["Stress and strain","Thermodynamic cycles","Fluid pressure","Electric current"],answer:0},
+
+  {q:"If a material deforms under a load, engineers compare that deformation to what?",choices:["Original length","Color","Time of day","Temperature only"],answer:0},
+  {q:"If two rods have the same force but one has a larger area, which has lower stress?",choices:["The rod with larger area","The rod with smaller area","Both must have zero stress","Area does not matter"],answer:0},
+  {q:"If two rods have the same area but one has larger force, which has higher stress?",choices:["The rod with larger force","The rod with smaller force","Both have no stress","Force does not matter"],answer:0},
+  {q:"Why can strain be written as a decimal like 0.002?",choices:["Because it is a ratio","Because it is measured in Newtons","Because it is pressure","Because it is always a whole number"],answer:0},
+  {q:"Which statement is true?",choices:["Stress uses force and area","Stress uses only time","Strain uses only force","Young's Modulus measures color"],answer:0},
+  {q:"Which statement is true?",choices:["Strain compares change in length to original length","Strain is measured in Pascals","Strain is always larger than stress","Strain means weight"],answer:0},
+  {q:"Which statement is true?",choices:["Young's Modulus measures stiffness","Young's Modulus measures mass only","Young's Modulus measures speed","Young's Modulus measures volume only"],answer:0},
+  {q:"Which statement is true about elastic deformation?",choices:["It is temporary","It is always permanent","It means no stress exists","It means the material melted"],answer:0},
+  {q:"Which statement is true about plastic deformation?",choices:["It is permanent","It is always temporary","It means stress is zero","It means no load was applied"],answer:0},
+  {q:"In normal design, engineers usually try to avoid what?",choices:["Plastic deformation","Elastic behavior","Safe loading","Stiffness calculations"],answer:0}
+];
+
+function shuffleQuestions() {
+  allQuestions = [...quizQuestions].sort(() => Math.random() - 0.5);
+}
+
+function openRandomQuizSet() {
+  const panel = document.getElementById("quiz-panel");
+  const randomBtn = document.querySelector("#quiz .quiz-btn");
+
+  panel.classList.add("open");
+  randomBtn.style.display = "none";
+
+  shuffleQuestions();
+  currentQuestionIndex = 0;
+  answeredQuestions = {};
+  loadQuestion();
+}
+
+function shuffleChoices(question) {
+
+  const choices = question.choices.map((choice, index) => ({
+    text: choice,
+    originalIndex: index
+  }));
+
+  for (let i = choices.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [choices[i], choices[j]] = [choices[j], choices[i]];
+  }
+
+  const newCorrectIndex = choices.findIndex(
+    choice => choice.originalIndex === question.answer
+  );
+
+  return {
+    question: question.q,
+    choices: choices,
+    correctIndex: newCorrectIndex
+  };
+}
+
+function loadQuestion() {
+
+  const container = document.getElementById("quiz-container");
+
+  const question = allQuestions[currentQuestionIndex];
+
+  if (!question.shuffledData) {
+    question.shuffledData = shuffleChoices(question);
+  }
+
+  const shuffled = question.shuffledData;
+
+  const saved = answeredQuestions[currentQuestionIndex];
+
+  let choicesHTML = "";
+
+  shuffled.choices.forEach((choiceObj, index) => {
+
+    let checked =
+      saved && saved.selectedIndex === index
+        ? "checked"
+        : "";
+
+    let disabled =
+      saved
+        ? "disabled"
+        : "";
+
+    let extraClass = "";
+
+    if (saved) {
+
+      if (index === saved.correctIndex) {
+        extraClass = "correct-answer";
+      }
+
+      if (
+        index === saved.selectedIndex &&
+        index !== saved.correctIndex
+      ) {
+        extraClass = "wrong-answer";
+      }
+    }
+
+    choicesHTML += `
+      <label class="answer-choice ${extraClass}" data-index="${index}">
+        <input type="radio" name="question" ${checked} ${disabled}>
+        ${choiceObj.text}
+      </label>
+    `;
+  });
+
+  const isLastQuestion =
+    currentQuestionIndex === allQuestions.length - 1;
+
+  container.innerHTML = `
+    <div class="quiz-question">
+
+      <p>
+        <strong>
+          Q${currentQuestionIndex + 1}
+          of
+          ${allQuestions.length}:
+        </strong>
+
+        ${question.q}
+      </p>
+
+      ${choicesHTML}
+
+      <button
+        id="check-answer-btn"
+        onclick="checkAnswer()"
+        ${saved ? "disabled" : ""}
+      >
+        Check Answer
+      </button>
+
+      <div class="quiz-nav-buttons">
+
+        ${
+          currentQuestionIndex > 0
+            ? `<button onclick="prevQuestion()">Back</button>`
+            : ``
+        }
+
+        ${
+          isLastQuestion
+            ? `<button onclick="submitQuiz()">Submit</button>`
+            : `<button onclick="nextQuestion()">Next</button>`
+        }
+
+      </div>
+
+    </div>
+  `;
+}
+
+function checkAnswer() {
+
+  const selected =
+    document.querySelector(
+      'input[name="question"]:checked'
+    );
+
+  if (!selected) return;
+
+  const question =
+    allQuestions[currentQuestionIndex];
+
+  const shuffled =
+    question.shuffledData;
+
+  const selectedIndex =
+    Number(
+      selected.parentElement.dataset.index
+    );
+
+  answeredQuestions[currentQuestionIndex] = {
+
+    selectedIndex: selectedIndex,
+
+    correctIndex: shuffled.correctIndex
+  };
+
+  loadQuestion();
+}
+
+function nextQuestion() {
+  currentQuestionIndex++;
+
+  if (currentQuestionIndex >= allQuestions.length) {
+    currentQuestionIndex = allQuestions.length - 1;
+  }
+
+  loadQuestion();
+}
+
+function prevQuestion() {
+  if (currentQuestionIndex > 0) {
+    currentQuestionIndex--;
+    loadQuestion();
+  }
+}
+
+function submitQuiz() {
+  let correct = 0;
+  let wrong = 0;
+
+  allQuestions.forEach((question, index) => {
+    const saved = answeredQuestions[index];
+
+    if (saved && saved.selectedIndex === question.answer) {
+      correct++;
+    } else {
+      wrong++;
+    }
+  });
+
+  const percent = Math.round((correct / allQuestions.length) * 100);
+
+  launchConfetti();
+
+  document.getElementById("quiz-container").innerHTML = `
+    <div class="quiz-question">
+      <h3>Quiz Results</h3>
+
+      <p><strong>Correct:</strong> ${correct}</p>
+      <p><strong>Wrong:</strong> ${wrong}</p>
+      <p><strong>Score:</strong> ${percent}%</p>
+
+      <button onclick="openRandomQuizSet()" class="quiz-btn">
+        Restart Quiz
+      </button>
+    </div>
+  `;
+}
+
+function launchConfetti() {
+  const colors = [
+    "#ff4d4d",
+    "#4dff88",
+    "#4da6ff",
+    "#ffff66",
+    "#ff66ff",
+    "#ffffff"
+  ];
+
+  for (let i = 0; i < 120; i++) {
+    const confetti = document.createElement("div");
+    confetti.classList.add("confetti");
+
+    confetti.style.left = Math.random() * 100 + "vw";
+    confetti.style.backgroundColor =
+      colors[Math.floor(Math.random() * colors.length)];
+
+    confetti.style.width = Math.random() * 8 + 6 + "px";
+    confetti.style.height = confetti.style.width;
+
+    confetti.style.animationDuration = (Math.random() * 3 + 7) + "s";
+    confetti.style.animationDelay = (Math.random() * 2) + "s";
+
+    document.body.appendChild(confetti);
+
+    confetti.addEventListener("animationend", () => {
+      confetti.remove();
+    });
+  }
+}
+
+console.log("dynamics quiz loaded. Total questions:", quizQuestions.length);
+</script>
 
 </body>
 </html>
